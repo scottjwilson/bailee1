@@ -1,6 +1,16 @@
 import * as styles from './styles'
-
-import Banner from './Banner'
 import { HomeHeader, PageHeader } from './Header'
-
-export { styles, Banner, PageHeader }
+import Banner from './Banner'
+import { Section } from './Section'
+import { Title } from './Title'
+import { BannerButton, SectionButton } from './Button'
+export {
+  styles,
+  HomeHeader,
+  PageHeader,
+  Banner,
+  BannerButton,
+  SectionButton,
+  Section,
+  Title,
+}
