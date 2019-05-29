@@ -8,6 +8,8 @@ import ArticlePreview from '../components/article-preview'
 
 import img from '../images/bcg/homeBcg.jpeg'
 
+//Sections
+import QuickInfo from '../components/HomePageComponents/QuickInfo'
 import { HomeHeader, Banner, BannerButton } from '../utils'
 
 class RootIndex extends React.Component {
@@ -18,32 +20,18 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div style={{ background: '#fff' }}>
-          <Helmet title={siteTitle} />
-          <HomeHeader img={img}>
-            <Banner
-              title="the bailee app"
-              subtitle="The Black American & International Listings of Eager Entrepreneurs"
-            >
-              <BannerButton style={{ margin: '2rem auto' }}>
-                Download
-              </BannerButton>
-            </Banner>
-          </HomeHeader>
-          <Hero data={author.node} />
-          <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
-            <ul className="article-list">
-              {posts.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-        </div>
+        <Helmet title={siteTitle} />
+        <HomeHeader img={img}>
+          <Banner
+            title="the bailee app"
+            subtitle="The Black American & International Listings of Eager Entrepreneurs"
+          >
+            <BannerButton style={{ margin: '2rem auto' }}>
+              Download
+            </BannerButton>
+          </Banner>
+        </HomeHeader>
+        <QuickInfo />
       </Layout>
     )
   }
