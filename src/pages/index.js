@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/hero'
@@ -8,7 +9,7 @@ import Layout from '../components/layout'
 import { Title } from '../utils'
 
 import img from '../images/bcg/homeBcg.jpeg'
-import styled from 'styled-components'
+
 import tw from 'tailwind.macro'
 
 //Sections
