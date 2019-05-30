@@ -2,9 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 61.8vh;
+  height: 50vh;
   max-height: 400px;
-  background: #000;
   font-size: 2em;
   overflow: hidden;
+
+  background: linear-gradient(to right, #481e20 0%, #cb322b 100%) center/cover
+    fixed no-repeat;
+  color: #fff;
 }
