@@ -4,12 +4,12 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import styled from 'styled-components'
-import styles from './blog.module.css'
+import blogstyles from './blog.module.css'
 import { Section } from '../utils'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 
-class BlogIndex extends React.Component {
+class BlogPage extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
@@ -18,7 +18,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location}>
         <div>
           <Helmet title={siteTitle} />
-          <div className={styles.hero}>Blog</div>
+          <div className={blogstyles.hero}>Blog</div>
           <Wrapper>
             <h2 className="section-headline">Recent articles</h2>
 
@@ -42,7 +42,7 @@ const Wrapper = styled.div`
   width: 70%;
 `
 
-export default BlogIndex
+export default BlogPage
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
