@@ -142,8 +142,8 @@ const ColumnRight = styled.div`
 `
 
 const Card = styled.div`
- 
-  padding: 3rem;
+  ${tw`p-4 m-4 md:m-6 shadow-lg rounded`};
+  
   background-color: #dcdfe2;
   color:black;
 
