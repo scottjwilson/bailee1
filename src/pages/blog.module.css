@@ -11,3 +11,8 @@
     fixed no-repeat;
   color: #fff;
 }
+
+.section-headline {
+  font-size: 1000rem;
+  text-align: center;
+}
