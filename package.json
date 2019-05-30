@@ -21,7 +21,8 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.7.0",
     "sharp": "^0.22.0",
-    "tailwind.macro": "^0.5.10"
+    "tailwind.macro": "^0.5.10",
+    "tailwindcss": "^1.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
