@@ -2,8 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
-import styled from 'styled-components'
+import style from './blog.module.css'
 import { styles, Banner, PageHeader } from '../utils'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
@@ -18,9 +17,10 @@ class BlogIndex extends React.Component {
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <PageHeader>
-            <Banner title="Blog" />
+            <Banner title="hey" />
           </PageHeader>
-          <BlogWrapper>
+
+          <div className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
             <ul className="article-list">
               {posts.map(({ node }) => {
@@ -31,14 +31,12 @@ class BlogIndex extends React.Component {
                 )
               })}
             </ul>
-          </BlogWrapper>
+          </div>
         </div>
       </Layout>
     )
   }
 }
-
-const BlogWrapper = styled.div``
 
 export default BlogIndex
 
