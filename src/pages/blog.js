@@ -2,12 +2,11 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import style from './blog.module.css'
-import { styles, Section, Banner, PageHeader, Title } from '../utils'
+
+import styled from 'styled-components'
+import { styles, Banner, PageHeader } from '../utils'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,20 +15,19 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div>
+        <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <PageHeader>
             <Banner title="Blog" />
           </PageHeader>
-
           <BlogWrapper>
-            <Title title="Recent articles" />
+            <h2 className="section-headline">Recent articles</h2>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
-                  <Post key={node.slug}>
+                  <li key={node.slug}>
                     <ArticlePreview article={node} />
-                  </Post>
+                  </li>
                 )
               })}
             </ul>
@@ -40,48 +38,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-const BlogWrapper = styled.div`
-  width: 90%;
-  margin: 2rem auto;
-  .text {
-
-    line-height: 2rem;
-    color: ${styles.colors.mainGrey}
-    word-spacing: 0.2rem;
-  }
-
-
-  @media (min-width: 768px) {
-    width: 70%;
-}
-
-@media (min-width: 992px) {
-    width: 70%;
-}
-`
-
-const Post = styled.li`
-
-  ${tw`flex p-4 m-4 md:m-6 shadow-md rounded`};
-  background: ${styles.gradients.dualityOne};
-  color:black;
-
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  &:hover {
-    transform: translateY(-5px);
-  }
-  }
-`
-
-const PostImage = styled.div`
-  flex: 25%;
-  margin: 1rem;
-  ${tw`shadow-md`};
-`
-
-const PostText = styled.div`
-  flex: 75%;
-`
+const BlogWrapper = styled.div``
 
 export default BlogIndex
 
