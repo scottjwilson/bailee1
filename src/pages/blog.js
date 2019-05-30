@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import style from './blog.module.css'
-import { styles, Banner, PageHeader } from '../utils'
+import { styles, Banner, PageHeader, Title } from '../utils'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 
@@ -14,14 +14,13 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div style={{ background: '#fff' }}>
+        <div>
           <Helmet title={siteTitle} />
           <PageHeader>
-            <Banner title="hey" />
+            <Banner title="Blog" />
           </PageHeader>
-
-          <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
+          <Title title="recent articles" />
+          <div>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
