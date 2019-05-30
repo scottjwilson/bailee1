@@ -142,7 +142,7 @@ const ColumnRight = styled.div`
 `
 
 const Card = styled.div`
-  ${tw`p-4 m-4 md:m-6 shadow-lg rounded`};
+  ${tw`p-4 m-4 md:m-6 shadow-md rounded`};
   
   background-color: #dcdfe2;
   color:black;
