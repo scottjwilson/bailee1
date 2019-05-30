@@ -11,6 +11,8 @@ import img from '../images/bcg/homeBcg.jpeg'
 //Sections
 import QuickInfo from '../components/HomePageComponents/QuickInfo'
 import QuickInfo2 from '../components/HomePageComponents/QuickInfo2'
+import Form from '../components/HomePageComponents/Form'
+
 import { HomeHeader, Banner, BannerButton } from '../utils'
 
 class RootIndex extends React.Component {
@@ -34,6 +36,7 @@ class RootIndex extends React.Component {
         </HomeHeader>
         <QuickInfo />
         <QuickInfo2 />
+        <Form />
       </Layout>
     )
   }
