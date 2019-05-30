@@ -4,16 +4,28 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
-import ArticlePreview from '../components/article-preview'
+
+import { Title } from '../utils'
 
 import img from '../images/bcg/homeBcg.jpeg'
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 //Sections
 import QuickInfo from '../components/HomePageComponents/QuickInfo'
 import QuickInfo2 from '../components/HomePageComponents/QuickInfo2'
 import Form from '../components/HomePageComponents/Form'
+import FeaturedBusinesses from '../components/HomePageComponents/FeaturedBusinesses'
 
-import { HomeHeader, Banner, BannerButton } from '../utils'
+import avatar1 from '../images/avatar1.jpg'
+
+import {
+  styles,
+  HomeHeader,
+  Banner,
+  BannerButton,
+  BusinessCard,
+} from '../utils'
 
 class RootIndex extends React.Component {
   render() {
@@ -35,6 +47,45 @@ class RootIndex extends React.Component {
           </Banner>
         </HomeHeader>
         <QuickInfo />
+        <FeaturedBusinesses>
+          <Title title="Featured Businesses" />
+          <BusinessCard
+            title="Frenchie Lamont"
+            link="#"
+            bg={styles.gradients.redGrad}
+            text="test"
+          >
+            <Avatar src={avatar1} alt="John Doe" />
+            <BusinessDescription>
+              A graphic designer that offers high quality custom t-shirts. I
+              also create logos for your personal and business needs
+            </BusinessDescription>
+          </BusinessCard>
+          <BusinessCard
+            title="Frenchie Lamont"
+            link="#"
+            bg={styles.gradients.redGrad}
+            text="test"
+          >
+            <Avatar src={avatar1} alt="John Doe" />
+            <BusinessDescription>
+              A graphic designer that offers high quality custom t-shirts. I
+              also create logos for your personal and business needs
+            </BusinessDescription>
+          </BusinessCard>
+          <BusinessCard
+            title="Frenchie Lamont"
+            link="#"
+            bg={styles.gradients.redGrad}
+            text="test"
+          >
+            <Avatar src={avatar1} alt="John Doe" />
+            <BusinessDescription>
+              A graphic designer that offers high quality custom t-shirts. I
+              also create logos for your personal and business needs
+            </BusinessDescription>
+          </BusinessCard>
+        </FeaturedBusinesses>
         <QuickInfo2 />
         <Form />
       </Layout>
@@ -42,6 +93,12 @@ class RootIndex extends React.Component {
   }
 }
 
+const BusinessDescription = styled.p`
+  ${tw`py-6`}
+`
+const Avatar = styled.img`
+  ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
+`
 export default RootIndex
 
 export const pageQuery = graphql`

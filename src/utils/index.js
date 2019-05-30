@@ -4,6 +4,7 @@ import Banner from './Banner'
 import { Section } from './Section'
 import { Title } from './Title'
 import { BannerButton, SectionButton } from './Button'
+import BusinessCard from './BusinessCard'
 export {
   styles,
   HomeHeader,
@@ -13,4 +14,5 @@ export {
   SectionButton,
   Section,
   Title,
+  BusinessCard,
 }
