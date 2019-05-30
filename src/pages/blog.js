@@ -14,23 +14,20 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
+        <PageHeader>
+          <Banner title="Blog" />
+        </PageHeader>
+        <Title title="recent articles" />
         <div>
-          <Helmet title={siteTitle} />
-          <PageHeader>
-            <Banner title="Blog" />
-          </PageHeader>
-          <Title title="recent articles" />
-          <div>
-            <ul className="article-list">
-              {posts.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
+          <ul className="article-list">
+            {posts.map(({ node }) => {
+              return (
+                <li key={node.slug}>
+                  <ArticlePreview article={node} />
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </Layout>
     )
