@@ -22,7 +22,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Bailee App',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
@@ -30,6 +30,13 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/images/`,
+        name: 'images',
+      },
+    },
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
