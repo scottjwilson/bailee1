@@ -2,13 +2,12 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
 import styles from './blog.module.css'
-import { Title } from '../utils'
+import { Section } from '../utils'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 
-class BlogPage extends React.Component {
+class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
@@ -18,24 +17,26 @@ class BlogPage extends React.Component {
         <div>
           <Helmet title={siteTitle} />
           <div className={styles.hero}>Blog</div>
-          <Title title="Recent Posts" />
+          <div className={styles.wrapper}>
+            <h2 className={styles.title}>Recent articles</h2>
 
-          <ul>
-            {posts.map(({ node }) => {
-              return (
-                <li key={node.slug}>
-                  <ArticlePreview article={node} />
-                </li>
-              )
-            })}
-          </ul>
+            <ul style={{ background: '#000' }}>
+              {posts.map(({ node }) => {
+                return (
+                  <li key={node.slug}>
+                    <ArticlePreview article={node} />
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
         </div>
       </Layout>
     )
   }
 }
 
-export default BlogPage
+export default BlogIndex
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
