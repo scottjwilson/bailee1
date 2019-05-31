@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: #cb322b;
     text-decoration: none;
+    font-family: 'Dosis', sans-serif;
   }
 
   h1,h2,h3,h4,h5,h6 {
