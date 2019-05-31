@@ -27,13 +27,12 @@ export default function Navbar() {
               Blog
             </a>
           </li>
+
           <li className="navigation__item">
-            <a href="/faq" className="navigation__link">
-              FAQ
-            </a>
-          </li>
-          <li className="navigation__item">
-            <a href="/download" className="navigation__link">
+            <a
+              href="https://itunes.apple.com/us/app/the-bailee-app-llc/id1388392304?mt=8"
+              className="navigation__link"
+            >
               Download
             </a>
           </li>

@@ -18,7 +18,7 @@ const Inner = styled.div`
 `
 
 const Content = styled.div`
-  ${tw`p-4 md:p-12 lg:px-24  justify-center items-center flex z-50`};
+  ${tw`p-4 md:p-12 lg:px-24 justify-center items-center flex z-50`};
 `
 
 export default FeaturedBusinesses

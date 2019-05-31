@@ -5,6 +5,7 @@ import Navigation from './navigation'
 import Navbar from './Navbar/Navbar'
 import styled from 'styled-components'
 import GlobalStyle from '../styles/global'
+import Footer from './footer'
 
 class Template extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class Template extends React.Component {
         <Navbar />
 
         {children}
+        <Footer />
       </Container>
     )
   }

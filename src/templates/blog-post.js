@@ -38,15 +38,7 @@ class BlogPostTemplate extends React.Component {
                 __html: post.body.childMarkdownRemark.html,
               }}
             />
-            <ul
-              style={{
-                display: `flex`,
-                flexWrap: `wrap`,
-                justifyContent: `space-between`,
-                listStyle: `none`,
-                padding: 0,
-              }}
-            >
+            <ul className={heroStyles.postNav}>
               <li>
                 {previous && (
                   <Link to={`/blog/${previous.slug}`} rel="prev">
@@ -57,7 +49,7 @@ class BlogPostTemplate extends React.Component {
               <li>
                 {next && (
                   <Link to={`/blog/${next.slug}`} rel="next">
-                    Next Post →
+                    {next.title} →
                   </Link>
                 )}
               </li>

@@ -5,7 +5,7 @@ import tw from 'tailwind.macro'
 
 const Wrapper = styled.div`
   width: 100%;
-  ${tw`shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24 text-white`};
+  ${tw`shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24 my-4 text-white w-full`};
   background: ${props => props.bg};
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {

@@ -6,7 +6,7 @@
 }
 
 .heroImage {
-  /*
+  /*r
     Ensure golden ratio for the hero size while limiting it to some extend to
     the viewport width
   */
@@ -51,22 +51,17 @@
 }
 
 .wrapper {
-  margin: 1rem 2rem;
+  width: 90%;
+  margin: 1rem auto;
   padding: 0 4rem;
 
   border-radius: 0.25rem;
   background-color: #dcdfe2;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .wrapper {
-    margin: 1rem 4rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .wrapper {
-    margin: 1rem 6rem;
+    width: 70%;
   }
 }
 .title {
@@ -80,4 +75,12 @@
   letter-spacing: 2px;
 
   text-transform: uppercase;
+}
+
+.postNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 3rem 0;
 }

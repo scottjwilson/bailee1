@@ -31,8 +31,6 @@ import {
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
     return (
       <Layout location={this.props.location}>
@@ -65,7 +63,7 @@ class RootIndex extends React.Component {
           <BusinessCard
             title="Frenchie Lamont"
             link="#"
-            bg={mainstyles.gradients.redGrad}
+            bg={mainstyles.gradients.blackGrad}
             text="test"
           >
             <Avatar src={avatar1} alt="John Doe" />
@@ -78,6 +76,18 @@ class RootIndex extends React.Component {
             title="Frenchie Lamont"
             link="#"
             bg={mainstyles.gradients.redGrad}
+            text="test"
+          >
+            <Avatar src={avatar1} alt="John Doe" />
+            <BusinessDescription>
+              A graphic designer that offers high quality custom t-shirts. I
+              also create logos for your personal and business needs
+            </BusinessDescription>
+          </BusinessCard>
+          <BusinessCard
+            title="Frenchie Lamont"
+            link="#"
+            bg={mainstyles.gradients.blackGrad}
             text="test"
           >
             <Avatar src={avatar1} alt="John Doe" />

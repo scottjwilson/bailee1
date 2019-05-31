@@ -14,9 +14,15 @@
 }
 
 .wrapper {
+  width: 90%;
+  margin: 1rem auto;
   text-align: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 70%;
+  }
 }
 
 .title {
