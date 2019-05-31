@@ -3,7 +3,8 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styles from './blog.module.css'
-import { Section } from '../utils'
+
+import Posts from '../components/BlogPageComponents/Posts'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 
@@ -15,16 +16,17 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Helmet title={siteTitle} />
-
-        <ul style={{ background: '#000' }}>
-          {posts.map(({ node }) => {
-            return (
-              <li key={node.slug}>
-                <ArticlePreview article={node} />
-              </li>
-            )
-          })}
-        </ul>
+        <Posts>
+          <ul style={{ background: '#000' }}>
+            {posts.map(({ node }) => {
+              return (
+                <li key={node.slug}>
+                  <ArticlePreview article={node} />
+                </li>
+              )
+            })}
+          </ul>
+        </Posts>
       </Layout>
     )
   }
