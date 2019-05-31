@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { styles, Section, Title, SectionButton } from '../../utils'
+import { mainstyles, Section, Title, SectionButton } from '../../utils'
 import { graphql, Link, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import tw from 'tailwind.macro'
@@ -86,7 +86,7 @@ const QuickInfoWrapper = styled.div`
 
   .text {
     line-height: 2rem;
-    color: ${styles.colors.mainGrey};
+    color: ${mainstyles.colors.mainGrey};
     word-spacing: 0.2rem;
   }
     ul {
@@ -130,7 +130,7 @@ const ColumnLeft = styled.div`
   }
 
   li {
-    color: ${styles.colors.mainBlack};
+    color: ${mainstyles.colors.mainBlack};
     font-size: 1rem;
     line-height: 1.7rem;
   }
@@ -163,7 +163,7 @@ const Card = styled.div`
   }
 
   .i2 {
-    color: ${styles.colors.mainRed};
+    color: ${mainstyles.colors.mainRed};
   }
 
   .i3 {

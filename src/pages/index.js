@@ -21,7 +21,7 @@ import FeaturedBusinesses from '../components/HomePageComponents/FeaturedBusines
 import avatar1 from '../images/avatar1.jpg'
 
 import {
-  styles,
+  mainstyles,
   HomeHeader,
   Banner,
   BannerButton,
@@ -53,7 +53,7 @@ class RootIndex extends React.Component {
           <BusinessCard
             title="Frenchie Lamont"
             link="#"
-            bg={styles.gradients.redGrad}
+            bg={mainstyles.gradients.redGrad}
             text="test"
           >
             <Avatar src={avatar1} alt="John Doe" />
@@ -65,7 +65,7 @@ class RootIndex extends React.Component {
           <BusinessCard
             title="Frenchie Lamont"
             link="#"
-            bg={styles.gradients.redGrad}
+            bg={mainstyles.gradients.redGrad}
             text="test"
           >
             <Avatar src={avatar1} alt="John Doe" />
@@ -77,7 +77,7 @@ class RootIndex extends React.Component {
           <BusinessCard
             title="Frenchie Lamont"
             link="#"
-            bg={styles.gradients.redGrad}
+            bg={mainstyles.gradients.redGrad}
             text="test"
           >
             <Avatar src={avatar1} alt="John Doe" />

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { styles } from '../utils'
+import { mainstyles } from '../utils'
 
 export function Title({ title, message }) {
   return (
@@ -13,7 +13,7 @@ export function Title({ title, message }) {
 
 const TitleWrapper = styled.div`
  text-align: center;
-  ${styles.letterSpacing({ spacing: '.3rem' })};
+  ${mainstyles.letterSpacing({ spacing: '.3rem' })};
 
   .title{
     font-size: 2rem;
@@ -34,7 +34,7 @@ const TitleWrapper = styled.div`
     width: 5rem;
     height: 0.2rem;
     margin: 1rem auto;
-    background: ${styles.colors.mainBlack};
+    background: ${mainstyles.colors.mainBlack};
   }
 `
 

@@ -3,9 +3,8 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import styled from 'styled-components'
-import blogstyles from './blog.module.css'
-import { Section } from '../utils'
+import styles from './blog.module.css'
+
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 
@@ -18,7 +17,7 @@ class BlogPage extends React.Component {
       <Layout location={this.props.location}>
         <div>
           <Helmet title={siteTitle} />
-          <div className={blogstyles.hero}>Blog</div>
+          <div className={styles.hero}>Blog</div>
           <Wrapper>
             <h2 className="section-headline">Recent articles</h2>
 
@@ -37,10 +36,6 @@ class BlogPage extends React.Component {
     )
   }
 }
-
-const Wrapper = styled.div`
-  width: 70%;
-`
 
 export default BlogPage
 

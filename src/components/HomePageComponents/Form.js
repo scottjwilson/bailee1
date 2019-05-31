@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { styles, Title, SectionButton } from '../../utils'
+import { mainstyles, Title, SectionButton } from '../../utils'
 import tw from 'tailwind.macro'
 
 export default function Form() {
@@ -57,7 +57,7 @@ const FormWrapper = styled.form`
   margin: auto auto;
   width: 90%;
 
-  background-color: ${styles.colors.mainGrey3};
+  background-color: ${mainstyles.colors.mainGrey3};
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7);
 
