@@ -4,7 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import styles from './blog.module.css'
-
+import { Title } from '../utils'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 
@@ -18,8 +18,7 @@ class BlogPage extends React.Component {
         <div>
           <Helmet title={siteTitle} />
           <div className={styles.hero}>Blog</div>
-
-          <h2 className="section-headline">Recent articles</h2>
+          <Title title="Recent Posts" />
 
           <ul>
             {posts.map(({ node }) => {
