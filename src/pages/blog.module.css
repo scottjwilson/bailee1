@@ -1,16 +1,13 @@
-body {
-  background-color: #fff;
-}
-
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
   max-height: 400px;
-  font-size: 2em;
-  overflow: hidden;
 
+  overflow: hidden;
+  font-size: 3rem;
+  text-transform: uppercase;
   background: linear-gradient(to right, #481e20 0%, #cb322b 100%) center/cover
     fixed no-repeat;
   color: #fff;
@@ -18,16 +15,26 @@ body {
 
 .wrapper {
   text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .title {
   font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   display: inline-block;
   background-image: linear-gradient(to right, #cb322b, #481e20);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
+}
+
+.articleList {
+  list-style: none;
+  padding: 0;
+}
+
+.articleItem {
 }
