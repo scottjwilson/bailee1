@@ -53,7 +53,7 @@ const FooterWrapper = styled.footer`
   flex-direction: column;
   margin-top: auto;
   flex-shrink: 0;
-  padding: 2rem 0;
+  padding: 3rem 0;
   background: ${mainstyles.colors.mainBlack};
   .icons {
     width: 10rem;

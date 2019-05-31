@@ -17,9 +17,9 @@ function BlogHeader({ img, children }) {
 }
 
 const IndexHeader = styled.header`
-  min-height: calc(100vh - 55.78px);
+  min-height: 100vh;
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.4)),
-    url(${props => props.img}) center/cover fixed no-repeat;
+    url(${props => props.img}) center/cover fixed;
   display: flex;
   justify-content: center;
   align-items: center;

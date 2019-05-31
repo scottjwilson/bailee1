@@ -19,6 +19,9 @@ import Form from '../components/HomePageComponents/Form'
 import FeaturedBusinesses from '../components/HomePageComponents/FeaturedBusinesses'
 
 import avatar1 from '../images/avatar1.jpg'
+import avatar2 from '../images/avatar2.png'
+import avatar3 from '../images/avatar3.jpg'
+import avatar4 from '../images/avatar4.jpg'
 
 import {
   mainstyles,
@@ -54,46 +57,47 @@ class RootIndex extends React.Component {
             bg={mainstyles.gradients.redGrad}
             text="test"
           >
-            <Avatar src={avatar1} alt="John Doe" />
+            <Avatar src={avatar3} alt="Frenchie Lamont" />
             <BusinessDescription>
               A graphic designer that offers high quality custom t-shirts. I
               also create logos for your personal and business needs
             </BusinessDescription>
           </BusinessCard>
           <BusinessCard
-            title="Frenchie Lamont"
+            title="One Love Custom Apparel"
             link="#"
             bg={mainstyles.gradients.blackGrad}
             text="test"
           >
-            <Avatar src={avatar1} alt="John Doe" />
+            <Avatar src={avatar1} alt="One Love Custom Apparel" />
             <BusinessDescription>
-              A graphic designer that offers high quality custom t-shirts. I
-              also create logos for your personal and business needs
+              Your premier full service custom t-shirt screen priting provider.
+              We also printer on mugs, hats, and shot glasses.
             </BusinessDescription>
           </BusinessCard>
           <BusinessCard
-            title="Frenchie Lamont"
+            title="Yeyo 2 Yaya"
             link="#"
             bg={mainstyles.gradients.redGrad}
             text="test"
           >
-            <Avatar src={avatar1} alt="John Doe" />
+            <Avatar src={avatar4} alt="Yeyo 2 Yaya" />
             <BusinessDescription>
-              A graphic designer that offers high quality custom t-shirts. I
-              also create logos for your personal and business needs
+              Birth and postpartum Doula services, womb stimulation, placenta
+              encapsulation
             </BusinessDescription>
           </BusinessCard>
           <BusinessCard
-            title="Frenchie Lamont"
+            title="Martous Naturals"
             link="#"
             bg={mainstyles.gradients.blackGrad}
             text="test"
           >
-            <Avatar src={avatar1} alt="John Doe" />
+            <Avatar src={avatar2} alt="Martous Naturals" />
             <BusinessDescription>
-              A graphic designer that offers high quality custom t-shirts. I
-              also create logos for your personal and business needs
+              A family owned natural products company located in Atlanta,
+              Georgia. Our products include handmade soaps, lotions, and sugar
+              scrubs for women and men.
             </BusinessDescription>
           </BusinessCard>
         </FeaturedBusinesses>

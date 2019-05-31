@@ -36,7 +36,7 @@ export default function Form() {
 }
 
 const FormSection = styled.section`
-  height: 40vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   align-content: center;
