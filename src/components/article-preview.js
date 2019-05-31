@@ -12,7 +12,6 @@ export default ({ article }) => (
     </h3>
     <small>{article.publishDate}</small>
     <p
-      className={styles.desc}
       dangerouslySetInnerHTML={{
         __html: article.description.childMarkdownRemark.html,
       }}
