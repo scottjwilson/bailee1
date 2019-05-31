@@ -18,19 +18,18 @@ class BlogPage extends React.Component {
         <div>
           <Helmet title={siteTitle} />
           <div className={styles.hero}>Blog</div>
-          <Wrapper>
-            <h2 className="section-headline">Recent articles</h2>
 
-            <ul>
-              {posts.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
-                  </li>
-                )
-              })}
-            </ul>
-          </Wrapper>
+          <h2 className="section-headline">Recent articles</h2>
+
+          <ul>
+            {posts.map(({ node }) => {
+              return (
+                <li key={node.slug}>
+                  <ArticlePreview article={node} />
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </Layout>
     )
