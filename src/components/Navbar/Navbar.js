@@ -28,7 +28,7 @@ export default function Navbar() {
 
           <li className="navigation__item">
             <Link to="/blog" className="navigation__link">
-              Blog
+              BLog
             </Link>
           </li>
 
