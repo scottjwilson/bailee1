@@ -2,8 +2,7 @@ import React from 'react'
 import './navbar.css'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import img from '../../images/favicon.jpg'
-
+import Image from './Image'
 export default function Navbar() {
   return (
     <Navigation>
@@ -13,9 +12,7 @@ export default function Navbar() {
         id="navi-toggle"
       />
       <label for="navi-toggle" className="navigation__button">
-        <span>
-          <img className="baileeappbutton" src={img} />
-        </span>
+        <Image className="baileeappbutton" />
       </label>
       <div className="navigation__background" />
       <nav className="navigation__nav">
