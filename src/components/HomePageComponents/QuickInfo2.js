@@ -13,68 +13,67 @@ import {
   MdMonetizationOn,
 } from 'react-icons/md'
 
-export default function QuickInfo2({ data }) {
-  return (
-    <StaticQuery
-      query={graphql`
-        {
-          img1: file(relativePath: { eq: "baileeapp800.png" }) {
-            childImageSharp {
-              fluid(maxWidth: 500) {
-                ...GatsbyImageSharpFluid
-              }
+const GET_IMAGES = graphql`
+  {
+    getImages: allFile(filter: { relativeDirectory: { eq: "featureIcons" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fixed(height: 50, width: 50) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
-      `}
-      render={data => (
-        <QuickInfoWrapper>
-          <Section>
-            <Title title="What it can do for you" />
-            <Container>
-              <ColumnLeft>
-                <Card>
-                  <CardBody>
-                    <MdZoomOutMap className="i" />
-                    Browse by category locate local black owned businesses
-                  </CardBody>
-                </Card>
+      }
+    }
+  }
+`
 
-                <Card>
-                  <CardBody>
-                    <MdChatBubbleOutline className="i i2" />
-                    Contact business directly by phone or instant chat
-                  </CardBody>
-                </Card>
+// const SINGLE_IMAGE = graphql`
+//   {
+//     img1: file(relativePath: { eq: "baileeapp800.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 500) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+//   `
 
-                <Card>
-                  <CardBody>
-                    <MdShare className="i i3" />
-                    Share and Favorite business
-                  </CardBody>
-                </Card>
+export default function QuickInfo2() {
+  return (
+    <StaticQuery
+      query={GET_IMAGES}
+      render={data => {
+        const images = data.getImages.edges
 
-                <Card>
-                  <CardBody>
-                    <MdBusinessCenter className="i i4" />
-                    Simple profile creation for business owners and customers
-                  </CardBody>
-                </Card>
-
-                <Card>
-                  <CardBody>
-                    <MdMonetizationOn className="i i5" />
-                    Grow your network and help other black business thrive
-                  </CardBody>
-                </Card>
-              </ColumnLeft>
-              <ColumnRight>
-                <Img fluid={data.img1.childImageSharp.fluid} />
-              </ColumnRight>
-            </Container>
-          </Section>
-        </QuickInfoWrapper>
-      )}
+        return (
+          <QuickInfoWrapper>
+            <Section>
+              <Title title="What it can do for you" />
+              <Container>
+                <ColumnLeft>
+                  {images.map(({ node }, index) => {
+                    return (
+                      <Card key={index}>
+                        <CardBody>
+                          <Img
+                            className="icons"
+                            fixed={node.childImageSharp.fixed}
+                          />
+                          <Info>{name}</Info>
+                        </CardBody>
+                      </Card>
+                    )
+                  })}
+                </ColumnLeft>
+                <ColumnRight>{/* <Img fluid={} /> */}</ColumnRight>
+              </Container>
+            </Section>
+          </QuickInfoWrapper>
+        )
+      }}
     />
   )
 }
@@ -182,4 +181,11 @@ const Card = styled.div`
 
 const CardBody = styled.div`
   display: flex;
+  justify-content: space-between;
+  .icons {
+  }
+`
+
+const Info = styled.p`
+  font-size: 0.7rem;
 `

@@ -17,6 +17,7 @@ import QuickInfo from '../components/HomePageComponents/QuickInfo'
 import QuickInfo2 from '../components/HomePageComponents/QuickInfo2'
 import Form from '../components/HomePageComponents/Form'
 import FeaturedBusinesses from '../components/HomePageComponents/FeaturedBusinesses'
+import AppFeatures from '../components/HomePageComponents/AppFeatures'
 
 import avatar1 from '../images/avatar1.jpg'
 import avatar2 from '../images/avatar2.png'
@@ -102,6 +103,7 @@ class RootIndex extends React.Component {
           </BusinessCard>
         </FeaturedBusinesses>
         <QuickInfo2 />
+        <AppFeatures />
         <Form />
       </Layout>
     )
