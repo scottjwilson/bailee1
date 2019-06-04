@@ -3,6 +3,7 @@ import './navbar.css'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Image from './Image'
+
 export default function Navbar() {
   return (
     <Navigation>
