@@ -44,7 +44,7 @@ export default function AppFeatures() {
 
 const FeaturedList = styled.div`
   width: 90%;
-  margin: 4rem auto;
+  margin: 1rem auto;
 
   @media (min-width: 768px) {
     width: 70%;
