@@ -102,7 +102,7 @@ class RootIndex extends React.Component {
             </BusinessDescription>
           </BusinessCard>
         </FeaturedBusinesses>
-        <QuickInfo2 />
+
         <AppFeatures />
         <Form />
       </Layout>

@@ -62,7 +62,6 @@ export default function QuickInfo2() {
                             className="icons"
                             fixed={node.childImageSharp.fixed}
                           />
-                          <Info>{name}</Info>
                         </CardBody>
                       </Card>
                     )
