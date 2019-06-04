@@ -1,6 +1,8 @@
 import React from 'react'
 import './navbar.css'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
+import img from '../../images/favicon.jpg'
 
 export default function Navbar() {
   return (
@@ -11,30 +13,32 @@ export default function Navbar() {
         id="navi-toggle"
       />
       <label for="navi-toggle" className="navigation__button">
-        <span className="navigation__icon">&nbsp;</span>
+        <span>
+          <img className="baileeappbutton" src={img} />
+        </span>
       </label>
-      <div className="navigation__background">&nbsp;</div>
+      <div className="navigation__background" />
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <a href="/" className="navigation__link">
+            <Link to="/" className="navigation__link">
               Home
-            </a>
+            </Link>
           </li>
 
           <li className="navigation__item">
-            <a href="/blog" className="navigation__link">
+            <Link to="/blog" className="navigation__link">
               Blog
-            </a>
+            </Link>
           </li>
 
           <li className="navigation__item">
-            <a
-              href="https://itunes.apple.com/us/app/the-bailee-app-llc/id1388392304?mt=8"
+            <Link
+              to="https://itunes.apple.com/us/app/the-bailee-app-llc/id1388392304?mt=8"
               className="navigation__link"
             >
               Download
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

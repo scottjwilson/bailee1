@@ -3,7 +3,7 @@
 }
 
 .navigation__button {
-  background-color: #fff;
+  background-color: #000;
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -26,6 +26,13 @@
     top: 1rem;
     right: 2rem;
   }
+}
+
+.baileeappbutton {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 1rem 3rem rgba(203, 50, 43, 0.5);
 }
 
 .navigation__background {
