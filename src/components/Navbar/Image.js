@@ -6,20 +6,17 @@ const Image = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "favicon.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
+        appButton: contentfulNav {
+          image {
+            fluid {
+              ...GatsbyContentfulFluid
             }
           }
         }
       }
     `}
     render={data => (
-      <Img
-        className="baileeappbutton"
-        fluid={data.placeholderImage.childImageSharp.fluid}
-      />
+      <Img className="baileeappbutton" fluid={data.appButton.image.fluid} />
     )}
   />
 )
