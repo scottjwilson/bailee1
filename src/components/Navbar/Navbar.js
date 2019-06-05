@@ -31,12 +31,12 @@ export default function Navbar() {
           </li>
 
           <li className="navigation__item">
-            <Link
-              to="https://itunes.apple.com/us/app/the-bailee-app-llc/id1388392304?mt=8"
+            <a
+              href="https://itunes.apple.com/us/app/the-bailee-app-llc/id1388392304?mt=8"
               className="navigation__link"
             >
               Download
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

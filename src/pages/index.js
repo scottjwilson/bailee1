@@ -45,7 +45,9 @@ class RootIndex extends React.Component {
             subtitle="The Black American & International Listings of Eager Entrepreneurs"
           >
             <BannerButton style={{ margin: '2rem auto' }}>
-              Download
+              <Download href="https://itunes.apple.com/us/app/the-bailee-app-llc/id1388392304?mt=8">
+                Download
+              </Download>
             </BannerButton>
           </Banner>
         </HomeHeader>
@@ -116,6 +118,11 @@ const BusinessDescription = styled.p`
 const Avatar = styled.img`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
 `
+
+const Download = styled.a`
+  color: white;
+`
+
 export default RootIndex
 
 export const pageQuery = graphql`
@@ -125,21 +132,14 @@ export const pageQuery = graphql`
         title
       }
     }
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+    biz: allContentfulBusiness {
       edges {
         node {
-          title
-          slug
-          publishDate(formatString: "MMMM Do, YYYY")
-          tags
-          heroImage {
-            fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-              ...GatsbyContentfulFluid_tracedSVG
-            }
-          }
-          description {
-            childMarkdownRemark {
-              html
+          name
+          description
+          profile {
+            fluid {
+              ...GatsbyContentfulFluid
             }
           }
         }
