@@ -26,8 +26,8 @@ const IndexHeader = styled.header`
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
-  @media (min-width: 900px) {
-    background: black;
+  @media (min-width: 300px) {
+    background: #000;
   }
 `
 
