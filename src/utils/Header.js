@@ -25,6 +25,10 @@ const IndexHeader = styled.header`
   align-items: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
+  @media (min-width: 900px) {
+    background: black;
+  }
 `
 
 const DefaultHeader = styled(IndexHeader)`
