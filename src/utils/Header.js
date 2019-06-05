@@ -26,8 +26,9 @@ const IndexHeader = styled.header`
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
-  @media (min-width: 300px) {
-    background: #000;
+  @media (max-width: 400px) {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.4)),
+      url(${props => props.img}) center/cover;
   }
 `
 
