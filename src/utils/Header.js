@@ -23,10 +23,10 @@ const IndexHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.4)),
       url(${props => props.img}) center/cover;
   }
