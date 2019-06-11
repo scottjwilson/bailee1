@@ -132,19 +132,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    biz: allContentfulBusiness {
-      edges {
-        node {
-          name
-          description
-          profile {
-            fluid {
-              ...GatsbyContentfulFluid
-            }
-          }
-        }
-      }
-    }
+    
     allContentfulPerson(
       filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
     ) {
