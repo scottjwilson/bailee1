@@ -3,6 +3,7 @@ import Image from 'gatsby-image'
 
 import { FaMap } from 'react-icons/fa'
 
+import bizstyle from './bizstyle.module.css'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -26,7 +27,7 @@ const Business = ({ business }) => {
   let mainImage = images ? images[0].fluid : img
 
   return (
-    <article>
+    <article className={bizstyle.bizcard}>
       <div>
         <Image fluid={mainImage} alt="single business" />
       </div>
