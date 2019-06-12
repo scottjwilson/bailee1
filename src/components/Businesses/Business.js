@@ -36,8 +36,8 @@ const Business = ({ business }) => {
         />
       </div>
       <div className={bizstyle.footer}>
-        <div>{name}</div>
-        <div>{description}</div>
+        <div className={bizstyle.name}>{name}</div>
+        <div className={bizstyle.description}>{description}</div>
         <div className={bizstyle.info}>
           <h4 className={bizstyle.country}>
             <FaMap className={bizstyle.icon} />
