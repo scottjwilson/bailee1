@@ -28,8 +28,8 @@ const Business = ({ business }) => {
   let mainImage = images ? images[0].fluid : img
 
   return (
-    <AniLink fade to={`/businesses/${slug}`}>
-      <article className={bizstyle.bizcard}>
+    <article className={bizstyle.bizcard}>
+      <AniLink fade to={`/businesses/${slug}`} className={bizstyle.biglink}>
         <div className={bizstyle.imagecontainer}>
           <Image
             fluid={mainImage}
@@ -50,8 +50,8 @@ const Business = ({ business }) => {
             </div>
           </div>
         </div>
-      </article>
-    </AniLink>
+      </AniLink>
+    </article>
   )
 }
 
