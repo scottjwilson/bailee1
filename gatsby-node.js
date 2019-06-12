@@ -9,11 +9,17 @@ exports.createPages = ({ graphql, actions }) => {
     resolve(
       graphql(
         `
-          {
-            allContentfulBlogPost {
+          query {
+            businesses: allContentfulBusiness {
               edges {
                 node {
-                  title
+                  slug
+                }
+              }
+            }
+            blogposts: allContentfulBlogPost {
+              edges {
+                node {
                   slug
                 }
               }
@@ -26,7 +32,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
 
-        const posts = result.data.allContentfulBlogPost.edges
+        const posts = result.data.blogposts.edges
 
         posts.forEach((post, index) => {
           const previous =
