@@ -13,6 +13,7 @@ import img from '../images/bcg/homeBcg.jpeg'
 //Sections
 import QuickInfo from '../components/HomePageComponents/QuickInfo'
 import Form from '../components/HomePageComponents/Form'
+import FeaturedBusiness from '../components/HomePageComponents/FeaturedBusiness'
 
 import AppFeatures from '../components/HomePageComponents/AppFeatures'
 
@@ -44,6 +45,7 @@ class RootIndex extends React.Component {
           </Banner>
         </HomeHeader>
         <QuickInfo />
+        <FeaturedBusiness />
 
         <AppFeatures />
         <Form />
