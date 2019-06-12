@@ -17,6 +17,8 @@
 
 .imagecontainer {
   transition: all 0.3s linear;
+  display: flex;
+  justify-content: center;
 
   margin: 0 auto;
 }

@@ -29,17 +29,21 @@ const Business = ({ business }) => {
   return (
     <article className={bizstyle.bizcard}>
       <div className={bizstyle.imagecontainer}>
-        <Image fluid={mainImage} alt="single business" />
+        <Image
+          fluid={mainImage}
+          className={bizstyle.img}
+          alt="single business"
+        />
       </div>
-      <div>
-        <p>{name}</p>
-        <p>{description}</p>
-        <div>
-          <h4>
-            <FaMap />
-            {location}
+      <div className={bizstyle.footer}>
+        <div>{name}</div>
+        <div>{description}</div>
+        <div className={bizstyle.info}>
+          <h4 className={bizstyle.country}>
+            <FaMap className={bizstyle.icon} />
+            {location || 'default location'}
           </h4>
-          <div>
+          <div className={bizstyle.details}>
             <h6>{category}</h6>
           </div>
         </div>
