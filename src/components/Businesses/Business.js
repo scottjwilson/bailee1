@@ -29,28 +29,27 @@ const Business = ({ business }) => {
 
   return (
     <Wrapper>
-      <div className="img-container">
+      <div>
         <Image fluid={mainImage} className="img" alt="single business" />
       </div>
-      <div className="footer">
-        <p className="title">{name}</p>
-        <p className="description">{description}</p>
-        <div className="info">
-          <h4 className="country">
-            <FaMap className="icon" />
+      <div>
+        <p>{name}</p>
+        <p>{description}</p>
+        <div>
+          <h4>
+            <FaMap />
             {location || 'default location'}
           </h4>
-          <div className="details">
+          <div>
             <h6>{category}</h6>
           </div>
         </div>
       </div>
-      <AniLink fade to={`/businesses/${slug}`} />
     </Wrapper>
   )
 }
 
-const Wrapper = styled.a`
+const Wrapper = styled.div`
   width: 100%;
   ${tw`shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24 my-4 text-white w-full`};
   background: linear-gradient(to bottom, #42393d 65%, #242223 100%);
@@ -135,16 +134,6 @@ const Wrapper = styled.a`
     text-align: right;
   }
 `
-
-// const Text = styled.div`
-//   ${tw`flex justify-center opacity-75 font-sans text-md md:text-base text-white py-4`};
-//   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-// `
-
-// const Title = styled.div`
-//   ${tw`flex justify-center text-white uppercase text-2xl tracking-wide font-sans py-4`};
-//   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-// `
 
 Business.PropTypes = {
   business: PropTypes.shape({
