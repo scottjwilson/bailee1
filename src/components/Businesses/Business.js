@@ -28,7 +28,7 @@ const Business = ({ business }) => {
 
   return (
     <article className={bizstyle.bizcard}>
-      <div>
+      <div className={bizstyle.imagecontainer}>
         <Image fluid={mainImage} alt="single business" />
       </div>
       <div>
