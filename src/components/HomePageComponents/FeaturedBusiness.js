@@ -2,6 +2,7 @@ import React from 'react'
 import Business from '../Businesses/Business'
 import { useStaticQuery, graphql } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import featbiz from './featbiz.module.css'
 
 const getBusinesses = graphql`
   query {
@@ -32,10 +33,10 @@ const FeaturedBusiness = () => {
   const businesses = response.featuredBusinesses.edges
 
   return (
-    <div>
+    <section className={featbiz.businesses}>
       <h1>featured</h1>
 
-      <div>
+      <div className={featbiz.center}>
         {businesses.map(({ node }) => {
           return <Business key={node.contentful_id} business={node} />
         })}
@@ -46,7 +47,7 @@ const FeaturedBusiness = () => {
           All businesses{' '}
         </AniLink>
       </div>
-    </div>
+    </section>
   )
 }
 
