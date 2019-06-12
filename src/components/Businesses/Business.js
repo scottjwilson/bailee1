@@ -29,24 +29,23 @@ const Business = ({ business }) => {
 
   return (
     <Wrapper>
-      <AniLink fade to={`/businesses/${slug}`}>
-        <div className="img-container">
-          <Image fluid={mainImage} className="img" alt="single business" />
-        </div>
-        <div className="footer">
-          <p className="title">{name}</p>
-          <p className="description">{description}</p>
-          <div className="info">
-            <h4 className="country">
-              <FaMap className="icon" />
-              {location || 'default location'}
-            </h4>
-            <div className="details">
-              <h6>{category}</h6>
-            </div>
+      <div className="img-container">
+        <Image fluid={mainImage} className="img" alt="single business" />
+      </div>
+      <div className="footer">
+        <p className="title">{name}</p>
+        <p className="description">{description}</p>
+        <div className="info">
+          <h4 className="country">
+            <FaMap className="icon" />
+            {location || 'default location'}
+          </h4>
+          <div className="details">
+            <h6>{category}</h6>
           </div>
         </div>
-      </AniLink>
+      </div>
+      <AniLink fade to={`/businesses/${slug}`} />
     </Wrapper>
   )
 }
