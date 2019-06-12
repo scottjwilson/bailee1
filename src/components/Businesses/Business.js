@@ -6,6 +6,7 @@ import { FaMap } from 'react-icons/fa'
 import bizstyle from './bizstyle.module.css'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const getImage = graphql`
   query {
@@ -27,28 +28,30 @@ const Business = ({ business }) => {
   let mainImage = images ? images[0].fluid : img
 
   return (
-    <article className={bizstyle.bizcard}>
-      <div className={bizstyle.imagecontainer}>
-        <Image
-          fluid={mainImage}
-          className={bizstyle.img}
-          alt="single business"
-        />
-      </div>
-      <div className={bizstyle.footer}>
-        <div className={bizstyle.name}>{name}</div>
-        <div className={bizstyle.description}>{description}</div>
-        <div className={bizstyle.info}>
-          <h4 className={bizstyle.country}>
-            <FaMap className={bizstyle.icon} />
-            {location || 'default location'}
-          </h4>
-          <div className={bizstyle.details}>
-            <h6>{category}</h6>
+    <AniLink fade to={`/businesses/${slug}`}>
+      <article className={bizstyle.bizcard}>
+        <div className={bizstyle.imagecontainer}>
+          <Image
+            fluid={mainImage}
+            className={bizstyle.img}
+            alt="single business"
+          />
+        </div>
+        <div className={bizstyle.footer}>
+          <div className={bizstyle.name}>{name}</div>
+          <div className={bizstyle.description}>{description}</div>
+          <div className={bizstyle.info}>
+            <h4 className={bizstyle.country}>
+              <FaMap className={bizstyle.icon} />
+              {location || 'default location'}
+            </h4>
+            <div className={bizstyle.details}>
+              <h6>{category}</h6>
+            </div>
           </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </AniLink>
   )
 }
 
