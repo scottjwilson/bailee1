@@ -33,7 +33,17 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         const posts = result.data.blogposts.edges
+        const featuredBusiness = result.data.businesses.edges
 
+        featuredBusiness.forEach(({ node }) => {
+          createPage({
+            path: `businesses/${node.slug}`,
+            component: path.resolve('./src/templates/business-template.js'),
+            context: {
+              slug: node.slug,
+            },
+          })
+        })
         posts.forEach((post, index) => {
           const previous =
             index === posts.length - 1 ? null : posts[index + 1].node
