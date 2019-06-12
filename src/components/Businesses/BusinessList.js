@@ -20,7 +20,7 @@ export default class BusinessList extends Component {
   render() {
     return (
       <section className={bizlist.businesses}>
-        <Title title="our businesses" />
+        <Title title="bailee businesses" />
         <div className={bizlist.center}>
           {this.state.sortedBusinesses.map(({ node }) => {
             return <Business key={node.contentful_id} business={node} />

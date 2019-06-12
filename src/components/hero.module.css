@@ -1,86 +1,15 @@
-.hero {
-  position: relative;
-  background: #000;
-  color: #fff;
-  text-align: center;
-}
+.ok {
+  min-height: 50vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(28, 12, 13, 0.702) 40%,
+    rgba(238, 232, 170, 0.402) 100%
+  );
 
-.heroImage {
-  /*r
-    Ensure golden ratio for the hero size while limiting it to some extend to
-    the viewport width
-  */
-  height: 61.8vh;
-  max-height: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-}
-
-.heroDetails {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.7);
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 0);
-  font-size: 14px;
-  padding: 0 0.5em;
-}
-
-@media (min-width: 600px) {
-  .heroDetails {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .heroDetails {
-    font-size: 20px;
-  }
-}
-
-.heroHeadline {
-  margin: 0;
-}
-
-.heroTitle {
-  margin: 0;
-  font-size: 1.125em;
-  font-weight: bold;
-}
-
-.postWrapper {
-}
-
-.wrapper {
-  width: 90%;
-  margin: 1rem auto;
-  padding: 0 2rem;
-
-  border-radius: 0.25rem;
-  background-color: #dcdfe2;
-}
-
-@media (min-width: 768px) {
-  .wrapper {
-    width: 70%;
-  }
-}
-.title {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, #cb322b, #481e20);
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 2px;
-
-  text-transform: uppercase;
-}
-
-.postNav {
+  background-position: center;
+  background-size: cover;
+  opacity: 1 !important;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  padding: 3rem 0;
+  justify-content: center;
+  align-items: center;
 }
