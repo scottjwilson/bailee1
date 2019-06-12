@@ -38,7 +38,7 @@ const FeaturedBusinesses1 = () => {
     <BusinessWrapper>
       <Title title="featured businesses" />
 
-      <div className="center">
+      <div className="centermebaby">
         {businesses.map(({ node }) => {
           return <Business key={node.contentful_id} business={node} />
         })}
@@ -57,7 +57,7 @@ const BusinessWrapper = styled.section`
   padding: 4rem 0;
   text-align: center;
 
-  .center {
+  .centermebaby {
     width: 80vw;
     margin: 3rem auto;
     display: grid;
