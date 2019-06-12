@@ -13,7 +13,6 @@ import img from '../images/bcg/homeBcg.jpeg'
 //Sections
 import QuickInfo from '../components/HomePageComponents/QuickInfo'
 import Form from '../components/HomePageComponents/Form'
-import FeaturedBusinesses1 from '../components/HomePageComponents/FeaturedBusinesses1'
 
 import AppFeatures from '../components/HomePageComponents/AppFeatures'
 
