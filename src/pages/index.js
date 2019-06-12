@@ -15,6 +15,7 @@ import tw from 'tailwind.macro'
 //Sections
 import QuickInfo from '../components/HomePageComponents/QuickInfo'
 import Form from '../components/HomePageComponents/Form'
+import FeaturedBusinesses1 from '../components/HomePageComponents/FeaturedBusinesses1'
 import FeaturedBusinesses from '../components/HomePageComponents/FeaturedBusinesses'
 import AppFeatures from '../components/HomePageComponents/AppFeatures'
 
@@ -51,6 +52,7 @@ class RootIndex extends React.Component {
           </Banner>
         </HomeHeader>
         <QuickInfo />
+        <FeaturedBusinesses1 />
         <FeaturedBusinesses>
           <Title title="Featured Businesses" />
           <BusinessCard
