@@ -3,7 +3,6 @@ import Business from '../Businesses/Business'
 import { useStaticQuery, graphql } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import featbiz from './featbiz.module.css'
-import { Title } from '../../utils/Title'
 
 const getBusinesses = graphql`
   query {
@@ -35,7 +34,7 @@ const FeaturedBusiness = () => {
 
   return (
     <section className={featbiz.businesses}>
-      <Title title="featured businesses" />
+      <h1>Featured</h1>
 
       <div className={featbiz.center}>
         {businesses.map(({ node }) => {
