@@ -30,6 +30,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    `gatsby-plugin-transition-link`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {

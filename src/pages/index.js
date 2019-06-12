@@ -14,7 +14,6 @@ import tw from 'tailwind.macro'
 
 //Sections
 import QuickInfo from '../components/HomePageComponents/QuickInfo'
-import QuickInfo2 from '../components/HomePageComponents/QuickInfo2'
 import Form from '../components/HomePageComponents/Form'
 import FeaturedBusinesses from '../components/HomePageComponents/FeaturedBusinesses'
 import AppFeatures from '../components/HomePageComponents/AppFeatures'
@@ -132,7 +131,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    
+
     allContentfulPerson(
       filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
     ) {

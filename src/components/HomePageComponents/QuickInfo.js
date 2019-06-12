@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { mainstyles, Section, Title, SectionButton } from '../../utils'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export default class QuickInfo2 extends Component {
   render() {
@@ -21,9 +21,10 @@ export default class QuickInfo2 extends Component {
             and more on our app. Our mission is to help black owned businesses
             thrive.
           </p>
-          <Link to="/about" style={{ textDecoration: 'none' }}>
-            {' '}
-          </Link>
+
+          <AniLink paintDrip to="blog" duration={1}>
+            Go to Page 3
+          </AniLink>
         </Section>
       </QuickInfoWrapper>
     )

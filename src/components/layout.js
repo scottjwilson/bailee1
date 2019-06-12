@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Navigation from './navigation'
 import Navbar from './Navbar/Navbar'
 import styled from 'styled-components'
 import GlobalStyle from '../styles/global'
