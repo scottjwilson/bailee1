@@ -44,7 +44,6 @@ class RootIndex extends React.Component {
           </Banner>
         </HomeHeader>
         <QuickInfo />
-        <FeaturedBusinesses1 />
 
         <AppFeatures />
         <Form />
