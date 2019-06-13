@@ -1,9 +1,13 @@
 .blog {
-  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
   transition: all 0.3s linear;
+  background: #fffdff;
 }
 .blog:hover {
-  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .img-container {

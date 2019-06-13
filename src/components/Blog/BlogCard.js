@@ -13,7 +13,13 @@ const BlogCard = ({ blog }) => {
           className={blogstyles.img}
           alt="single post"
         />
-        <AniLink fade className={blogstyles.link} to={`/blog/${slug}`} />
+        <AniLink fade className={blogstyles.link} to={`/blog/${slug}`}>
+          read more{' '}
+        </AniLink>
+        <h6 className={blogstyles.date}>{publishedDate}</h6>
+      </div>
+      <div className={blogstyles.footer}>
+        <h4>{title}</h4>
       </div>
     </article>
   )
