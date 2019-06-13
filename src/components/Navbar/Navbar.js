@@ -3,6 +3,7 @@ import './navbar.css'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Image from './Image'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export default function Navbar() {
   return (
@@ -19,15 +20,19 @@ export default function Navbar() {
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <Link to="/" className="navigation__link">
+            <AniLink fade to="/" className="navigation__link">
               Home
-            </Link>
+            </AniLink>
           </li>
-
           <li className="navigation__item">
-            <Link to="/blog" className="navigation__link">
+            <AniLink fade to="/businesses" className="navigation__link">
+              Businesses
+            </AniLink>
+          </li>
+          <li className="navigation__item">
+            <AniLink fade to="/blog" className="navigation__link">
               BLog
-            </Link>
+            </AniLink>
           </li>
 
           <li className="navigation__item">
