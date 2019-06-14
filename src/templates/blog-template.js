@@ -11,7 +11,19 @@ const Blog = ({ data }) => {
     publishDate,
     richbody: { json },
   } = data.post
-  console.log(title)
+
+  const options = {
+    renderNode: {
+      'embedded-asset-block': node => {
+        console.log(node)
+        return (
+          <div className={blogstyle.rich}>
+            <img width="400" src={node.data.target.fields.file['en-US'].url} />
+          </div>
+        )
+      },
+    },
+  }
 
   return (
     <Layout>
@@ -20,7 +32,7 @@ const Blog = ({ data }) => {
           <h1>{title}</h1>
           <h4>Published at : {publishDate}</h4>
           <article className={blogstyle.post}>
-            {documentToReactComponents(json)}
+            {documentToReactComponents(json, options)}
           </article>
         </div>
         <AniLink fade to="/blog" className="btn-primary">

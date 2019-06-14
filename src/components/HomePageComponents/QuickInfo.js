@@ -21,10 +21,6 @@ export default class QuickInfo2 extends Component {
             and more on our app. Our mission is to help black owned businesses
             thrive.
           </p>
-
-          <AniLink paintDrip to="blog" duration={1}>
-            Go to Page 3
-          </AniLink>
         </Section>
       </QuickInfoWrapper>
     )
