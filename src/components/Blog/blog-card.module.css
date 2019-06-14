@@ -1,9 +1,9 @@
 .blog {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
-
+  border-radius: 0.25rem;
   transition: all 0.3s linear;
-  background: #fffdff;
+  background: #edf2f7;
 }
 .blog:hover {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
@@ -14,9 +14,11 @@
   position: relative;
   background: #cb322b;
   transition: all 0.3s linear;
+  border-radius: 0.25rem;
 }
 .img {
   transition: all 0.3s linear;
+  border-radius: 0.25rem;
 }
 .img-container:hover .img {
   opacity: 0.3;
@@ -46,10 +48,11 @@
 }
 
 .footer {
-  padding: 1rem;
+  padding: 3rem 1rem;
   text-align: left;
 }
 .footer h4 {
+  font-size: 1.3rem;
   text-transform: capitalize;
   margin-bottom: 0;
 }

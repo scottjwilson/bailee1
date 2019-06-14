@@ -30,7 +30,7 @@ export default function Navbar() {
             </AniLink>
           </li>
           <li className="navigation__item">
-            <AniLink fade to="/blog" className="navigation__link">
+            <AniLink fade to="/blogs" className="navigation__link">
               BLog
             </AniLink>
           </li>
