@@ -19,8 +19,8 @@
 .link {
   text-transform: uppercase;
   letter-spacing: 4px;
-  background: #cb322b;
-  color: #fffdff;
+  background: #b8c2cc;
+  color: #cb322b;
   border: 2px solid #cb322b;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
@@ -33,8 +33,8 @@
   color: #cb322b;
 }
 .active {
-  background: #fffdff;
-  color: #cb322b;
+  background: #cb322b;
+  color: #b8c2cc;
 }
 
 @media screen and (min-width: 576px) {
