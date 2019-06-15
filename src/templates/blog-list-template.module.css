@@ -18,23 +18,23 @@
 }
 .link {
   text-transform: uppercase;
-  letter-spacing: var(--mainSpacing);
-  background: var(--primaryColor);
-  color: var(--mainWhite);
-  border: 2px solid var(--primaryColor);
+  letter-spacing: 4px;
+  background: #cb322b;
+  color: #fffdff;
+  border: 2px solid #cb322b;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   display: inline-block;
-  transition: var(--mainTransition);
+  transition: all 0.3s linear;
   cursor: pointer;
 }
 .link:hover {
   background: transparent;
-  color: var(--primaryColor);
+  color: #cb322b;
 }
 .active {
-  background: var(--mainWhite);
-  color: var(--primaryColor);
+  background: #fffdff;
+  color: #cb322b;
 }
 
 @media screen and (min-width: 576px) {

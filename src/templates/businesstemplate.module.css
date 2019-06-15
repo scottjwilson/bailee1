@@ -13,11 +13,11 @@
   margin-bottom: 2rem;
 }
 .image {
-  box-shadow: var(--lightShadow);
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 }
 .template h2 {
   text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 4px;
   margin-bottom: 1rem;
 }
 .info {
@@ -31,7 +31,7 @@
   text-transform: capitalize;
 }
 .icon {
-  color: var(--primaryColor);
+  color: #cb322b;
   font-size: 1.4rem;
   margin-right: 0.5rem;
 }
