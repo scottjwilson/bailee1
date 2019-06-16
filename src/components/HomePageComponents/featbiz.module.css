@@ -21,23 +21,19 @@
   margin: 0 auto;
 }
 .btnprimary {
-  margin: 0 auto;
-  background: linear-gradient(to right, #481e20 0%, #cb322b 100%);
-  color: #fffdff;
-  border: linear-gradient(to right, #481e20 0%, #cb322b 100%);
-  padding: 1rem 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  color: #cb322b;
+  border: 2px solid #cb322b;
+  padding: 0.9rem 1.6rem;
   display: inline-block;
   transition: all 0.3s linear;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 800;
-  border-radius: 0.3rem;
 }
 
 .btnprimary:hover {
   transform: translateY(-5px);
+  font-weight: 800;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }

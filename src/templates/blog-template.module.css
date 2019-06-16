@@ -2,11 +2,21 @@
   padding: 4rem 0;
 }
 .center {
-  width: 80vw;
+  width: 70vw;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .center {
+    width: 50vw;
+  }
+}
+
 .blog h1 {
   font-size: 2rem;
+  background-image: linear-gradient(to right, #cb322b, #481e20);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .blog h4 {
   text-transform: uppercase;
@@ -29,19 +39,25 @@
   font-size: 1.2rem;
 }
 
-.btn {
+.btnwrapper {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.btnprimary {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 4px;
-  color: #fffdff;
-  border: 2px solid #fffdff;
+  color: #cb322b;
+  border: 2px solid #cb322b;
   padding: 0.9rem 1.6rem;
   display: inline-block;
   transition: all 0.3s linear;
   cursor: pointer;
 }
 
-.btn:hover {
-  background: transparent;
-  color: #cb322b;
+.btnprimary:hover {
+  transform: translateY(-5px);
+  font-weight: 800;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }

@@ -14,13 +14,16 @@ const BlogCard = ({ blog }) => {
           alt="single post"
         />
         <AniLink fade className={blogstyles.link} to={`/blog/${slug}`}>
+          {' '}
           read more
         </AniLink>
         <h6 className={blogstyles.date}>{publishDate}</h6>
       </div>
-      <div className={blogstyles.footer}>
-        <h4>{title}</h4>
-      </div>
+      <AniLink fade to={`/blog/${slug}`}>
+        <div className={blogstyles.footer}>
+          <h4>{title}</h4>
+        </div>
+      </AniLink>
     </article>
   )
 }

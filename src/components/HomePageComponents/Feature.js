@@ -28,7 +28,7 @@ const Card = styled.div`
   grid-template-columns: auto 1fr;
   grid-column-gap: 1rem;
 
-  background-color: #dcdfe2;
+  background-color: #f7fafc;
   color: black;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {

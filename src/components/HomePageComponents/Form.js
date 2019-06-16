@@ -57,7 +57,7 @@ const FormWrapper = styled.form`
   margin: auto auto;
   width: 90%;
 
-  background-color: ${mainstyles.colors.mainGrey3};
+  background-color: #edf2f7;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7);
 
@@ -79,7 +79,7 @@ const Input = styled.input`
 
   padding: 1rem 1rem;
   border-radius: 2px;
-  background-color: #fef;
+  background-color: #f7fafc;
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;

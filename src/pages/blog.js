@@ -3,10 +3,15 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import { graphql } from 'gatsby'
 import BlogList from '../components/Blog/BlogList'
+import SEO from '../components/SEO'
 
 const blog = ({ data }) => {
   return (
     <Layout>
+      <SEO
+        title="Blogs"
+        description="black owned business directory blog bailee"
+      />
       <Hero img={data.blogbg.childImageSharp.fluid} />
       <BlogList />
     </Layout>

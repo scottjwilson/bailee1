@@ -43,7 +43,7 @@ const FeaturedBusiness = () => {
         })}
       </div>
       <div>
-        <AniLink fade to="/businesses">
+        <AniLink fade to="/businesses" className={featbiz.btnprimary}>
           {' '}
           All businesses{' '}
         </AniLink>

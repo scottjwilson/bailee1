@@ -2,9 +2,10 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
+
 import Hero from '../components/hero'
 import Layout from '../components/layout'
+import SEO from '../components/SEO'
 
 import { Title } from '../utils'
 
@@ -31,7 +32,7 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <Helmet title={siteTitle} />
+        <SEO title="Home" description="welcome to bailee" />
         <HomeHeader img={img}>
           <Banner
             title="the bailee app"

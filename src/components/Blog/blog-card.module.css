@@ -55,6 +55,10 @@
   font-size: 1.3rem;
   text-transform: capitalize;
   margin-bottom: 0;
+  background-image: linear-gradient(to right, #cb322b, #481e20);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .date {
   position: absolute;

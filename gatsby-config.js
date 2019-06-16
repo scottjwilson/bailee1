@@ -23,6 +23,12 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: 'Bailee App',
+    description:
+      'The Black American and International Listings of Eager Entrepreneurs. A global network of black owned businesses',
+    author: '@swolecoder',
+    twitterUsername: '@thebaileeapp',
+    image: '/defaultBcg.jpeg',
+    siteUrl: 'https://bailee.netlify.com',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
@@ -31,6 +37,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-playground`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {

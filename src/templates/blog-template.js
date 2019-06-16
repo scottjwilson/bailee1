@@ -33,9 +33,11 @@ const Blog = ({ data }) => {
           <article className={blogstyle.post}>
             {documentToReactComponents(json, options)}
           </article>
-          <AniLink fade to="/blog" className={blogstyle.btn}>
-            all posts
-          </AniLink>
+          <div className={blogstyle.btnwrapper}>
+            <AniLink fade to="/blog" className={blogstyle.btnprimary}>
+              all posts
+            </AniLink>
+          </div>
         </div>
       </section>
     </Layout>
