@@ -22,7 +22,8 @@
 }
 .info {
   display: flex;
-  flex-wrap: wrap;
+
+  justify-content: center;
 }
 .info p {
   display: flex;
@@ -41,25 +42,17 @@
 .template h4 {
   text-transform: capitalize;
 }
-.template h2 {
+.template h1 {
   margin: 2rem 0;
-}
-.journey {
-  margin: 3rem 0;
-}
-@media screen and (min-width: 992px) {
-  .journey,
-  .desc {
-    width: 70vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .center {
-    width: 95vw;
-    max-width: 1170vw;
-  }
-  .images {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    grid-column-gap: 50px;
-  }
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  background-image: linear-gradient(to right, #cb322b, #481e20);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
 }

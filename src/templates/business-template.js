@@ -15,19 +15,7 @@ const Template = ({ data }) => {
       <Hero img={mainImage.fluid} />
       <section className={businesstemplate.template}>
         <div className={businesstemplate.center}>
-          <div className={businesstemplate.images}>
-            {allImages.map((item, index) => {
-              return (
-                <Img
-                  key={index}
-                  fluid={item.fluid}
-                  alt="single tour"
-                  className={businesstemplate.image}
-                />
-              )
-            })}
-          </div>
-          <h2>{name}</h2>
+          <h1>{name}</h1>
           <div className={businesstemplate.info}>
             <p>
               <FaMap className={businesstemplate.icon} />
@@ -40,8 +28,24 @@ const Template = ({ data }) => {
           </div>
 
           <p className={businesstemplate.desc}>{description}</p>
+          <div className={businesstemplate.images}>
+            {allImages.map((item, index) => {
+              return (
+                <Img
+                  key={index}
+                  fluid={item.fluid}
+                  alt="single tour"
+                  className={businesstemplate.image}
+                />
+              )
+            })}
+          </div>
 
-          <AniLink fade to="/businesses" className="btn-primary">
+          <AniLink
+            fade
+            to="/businesses"
+            className={businesstemplate.btnprimary}
+          >
             back to businesses
           </AniLink>
         </div>
