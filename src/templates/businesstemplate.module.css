@@ -13,8 +13,16 @@
   margin-bottom: 2rem;
 }
 .image {
-  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s linear;
 }
+
+.image:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+}
+
 .template h2 {
   text-transform: capitalize;
   letter-spacing: 4px;
@@ -55,4 +63,27 @@
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
+}
+
+.btnwrapper {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btnprimary {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  color: #cb322b;
+  border: 2px solid #cb322b;
+  padding: 0.9rem 1.6rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.btnprimary:hover {
+  transform: translateY(-5px);
+  font-weight: 800;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }

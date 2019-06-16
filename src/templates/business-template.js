@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import { FaMap } from 'react-icons/fa'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import businesstemplate from './businesstemplate.module.css'
+import SEO from '../components/SEO'
 
 const Template = ({ data }) => {
   const { name, description, location, category, images } = data.biz
@@ -12,6 +13,7 @@ const Template = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={name} />
       <Hero img={mainImage.fluid} />
       <section className={businesstemplate.template}>
         <div className={businesstemplate.center}>
@@ -20,10 +22,6 @@ const Template = ({ data }) => {
             <p>
               <FaMap className={businesstemplate.icon} />
               {location}
-            </p>
-            <p>
-              <FaMap className={businesstemplate.icon} />
-              {category}
             </p>
           </div>
 
@@ -40,14 +38,15 @@ const Template = ({ data }) => {
               )
             })}
           </div>
-
-          <AniLink
-            fade
-            to="/businesses"
-            className={businesstemplate.btnprimary}
-          >
-            back to businesses
-          </AniLink>
+          <div className={businesstemplate.btnwrapper}>
+            <AniLink
+              fade
+              to="/businesses"
+              className={businesstemplate.btnprimary}
+            >
+              back to businesses
+            </AniLink>
+          </div>
         </div>
       </section>
     </Layout>

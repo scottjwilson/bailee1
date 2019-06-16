@@ -3,7 +3,7 @@
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-radius: 0.25rem;
   transition: all 0.3s linear;
-  background: #edf2f7;
+  background: #f7fafc;
 }
 .blog:hover {
   box-shadow: 0 20px 25px -5px rrrrrrgba(0, 0, 0, 0.1),
@@ -48,7 +48,7 @@
 }
 
 .footer {
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   text-align: left;
 }
 .footer h4 {

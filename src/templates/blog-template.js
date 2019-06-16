@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import blogstyle from './blog-template.module.css'
+import SEO from '../components/SEO'
 
 const Blog = ({ data }) => {
   const {
@@ -26,6 +27,7 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={title} />
       <section className={blogstyle.blog}>
         <div className={blogstyle.center}>
           <h1>{title}</h1>
@@ -34,7 +36,7 @@ const Blog = ({ data }) => {
             {documentToReactComponents(json, options)}
           </article>
           <div className={blogstyle.btnwrapper}>
-            <AniLink fade to="/blog" className={blogstyle.btnprimary}>
+            <AniLink fade to="/blogs" className={blogstyle.btnprimary}>
               all posts
             </AniLink>
           </div>

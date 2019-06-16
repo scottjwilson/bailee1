@@ -40,8 +40,9 @@
 }
 
 .btnwrapper {
-  margin: 0 auto;
-  display: inline-block;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
 }
 
 .btnprimary {
