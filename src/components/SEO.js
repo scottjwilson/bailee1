@@ -42,4 +42,4 @@ const SEO = ({ title, description }) => {
   )
 }
 
-export default SEOr
+export default SEO
