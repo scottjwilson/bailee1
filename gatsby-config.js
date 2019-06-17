@@ -38,11 +38,20 @@ module.exports = {
     'gatsby-plugin-sharp',
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/images/`,
         name: 'images',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://bailee.netlify.com',
+        sitemap: 'https://bailee.netlify.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     {
