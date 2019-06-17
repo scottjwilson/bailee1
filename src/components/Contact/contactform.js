@@ -32,7 +32,9 @@ export default function Form() {
               placeholder="Your Message"
             />
             <div className={styles.btnwrapper}>
-              <input className={styles.submit} type="submit" value="Send" />
+              <button className={styles.submit} type="submit">
+                Send
+              </button>
             </div>
           </div>
         </form>

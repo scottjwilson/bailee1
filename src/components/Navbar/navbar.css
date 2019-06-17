@@ -91,12 +91,7 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    #cb322b 1%
-  );
+
   background-size: 230%;
   transition: all 0.4s;
 }
@@ -104,8 +99,8 @@
 .navigation__link:hover,
 .navigation__link:active {
   background-position: 100%;
-  color: #fff;
-  transform: translateX(0.5rem);
+  color: #cb322b;
+  transform: translateY(-0.2rem);
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
