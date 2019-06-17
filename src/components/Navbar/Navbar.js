@@ -36,12 +36,14 @@ export default function Navbar() {
           </li>
 
           <li className="navigation__item">
-            <a
-              href="https://itunes.apple.com/us/app/the-bailee-app-llc/id1388392304?mt=8"
-              className="navigation__link"
-            >
-              Download
-            </a>
+            <AniLink fade to="/blog/faq" className="navigation__link">
+              FAQ
+            </AniLink>
+          </li>
+          <li className="navigation__item">
+            <AniLink fade to="/contact" className="navigation__link">
+              Contact
+            </AniLink>
           </li>
         </ul>
       </nav>
