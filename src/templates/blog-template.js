@@ -5,13 +5,23 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import blogstyle from './blog-template.module.css'
 import SEO from '../components/SEO'
+import { DiscussionEmbed } from 'disqus-react'
 
-const Blog = ({ data }) => {
+const Blog = ({ data, pageContext }) => {
   const {
     title,
     publishDate,
     richbody: { json },
   } = data.post
+
+  const baseUrl = 'https://bailee.netlify.com'
+
+  const disqusShortname = 'bailee-1'
+  const disqusConfig = {
+    identifier: pageContext.slug,
+    title: title,
+    url: baseUrl + pageContext.slug,
+  }
 
   const options = {
     renderNode: {
@@ -41,6 +51,9 @@ const Blog = ({ data }) => {
             </AniLink>
           </div>
         </div>
+        <div className={blogstyle.center}>
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+        </div>
       </section>
     </Layout>
   )
@@ -51,6 +64,7 @@ export const query = graphql`
   query getPost($slug: String!) {
     post: contentfulBlogPost(slug: { eq: $slug }) {
       title
+      slug
       publishDate(formatString: "MMMM Do, YYYY")
       richbody {
         json
