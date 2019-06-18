@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import img from 'gatsby-image'
 import { mainstyles } from '../utils'
 import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
+import links from '../constants/links'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import styles from '../components/footer.module.css'
 
 export default class Footer extends Component {
   state = {
@@ -27,62 +30,31 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <FooterWrapper>
-        <div className="title">Bailee</div>
-        <div className="icons">
+      <footer className={styles.footer}>
+        <div className={styles.links}>
+          {links.map((item, index) => {
+            return (
+              <AniLink fade key={index} to={item.path} className={styles.link}>
+                {item.text}
+              </AniLink>
+            )
+          })}
+        </div>
+        <div className={styles.icons}>
           {this.state.icons.map(item => (
             <a
               href={item.path}
               key={item.id}
               target="_blank"
               rel="noopener noreferrer"
-              className="icon"
+              className={styles.icon}
             >
               {item.icon}
             </a>
           ))}
         </div>
-        <p className="copyright">Copyright 2019 Bailee</p>
-      </FooterWrapper>
+        <p className={styles.copyright}>Copyright 2019 Bailee</p>
+      </footer>
     )
   }
 }
-
-const FooterWrapper = styled.footer`
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-  flex-shrink: 0;
-  padding: 3rem 0;
-  background: ${mainstyles.colors.mainBlack};
-  .icons {
-    width: 10rem;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-  .icon {
-    color: ${mainstyles.colors.mainWhite};
-    font-size: 1.3rem;
-    ${mainstyles.transition({})};
-    &:hover {
-      color: ${mainstyles.colors.mainRed};
-    }
-  }
-
-  .copyright {
-    color: ${mainstyles.colors.mainWhite};
-    text-align: center;
-    margin: 1rem auto;
-    text-transform: capitalize;
-  }
-
-  .title {
-    text-align: center;
-    width: 10rem;
-    color: ${mainstyles.colors.mainWhite};
-    margin: 0 auto 2rem auto;
-    padding: 0.4rem 1rem;
-    font-size: 1.35rem;
-  }
-`

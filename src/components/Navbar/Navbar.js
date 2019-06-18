@@ -41,6 +41,11 @@ export default function Navbar() {
             </AniLink>
           </li>
           <li className="navigation__item">
+            <AniLink fade to="/team" className="navigation__link">
+              Meet The Team
+            </AniLink>
+          </li>
+          <li className="navigation__item">
             <AniLink fade to="/contact" className="navigation__link">
               Contact
             </AniLink>

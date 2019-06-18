@@ -1,0 +1,63 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  flex-shrink: 0;
+  padding: 3rem 0;
+  background: #242223;
+}
+
+.icons {
+  width: 10em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: white;
+}
+
+.icon {
+  color: #fffdff;
+  font-size: 1.3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon:hover {
+  color: #cb322b;
+}
+
+.title {
+  text-align: center;
+  width: 10rem;
+  color: #fffdff;
+  margin: 0 auto 2rem auto;
+  padding: 0.4rem 1rem;
+  font-size: 1.35rem;
+}
+
+.copyright {
+  color: #fffdff;
+  text-align: center;
+  margin: 1rem auto;
+  text-transform: capitalize;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fffdff;
+  margin: 3rem 1rem;
+  letter-spacing: 4px;
+
+  font-weight: bold;
+}
+
+.link {
+  margin: 0 1rem;
+  transition: all 0.4s;
+}
+
+.link:hover {
+  transform: translateY(-0.2rem);
+}
