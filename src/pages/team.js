@@ -6,7 +6,6 @@ import TeamList from '../components/Team/TeamList'
 const team = () => {
   return (
     <Layout>
-      <Hero> hi from hero</Hero>
       <TeamList />
     </Layout>
   )
