@@ -1,0 +1,10 @@
+.list {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+@media (min-width: 768px) {
+  .list {
+    width: 70%;
+  }
+}
