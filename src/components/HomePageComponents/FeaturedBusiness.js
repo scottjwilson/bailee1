@@ -42,7 +42,7 @@ const FeaturedBusiness = () => {
           return <Business key={node.contentful_id} business={node} />
         })}
       </div>
-      <div>
+      <div className={featbiz.btnwrapper}>
         <AniLink fade to="/businesses" className={featbiz.btnprimary}>
           {' '}
           All businesses{' '}

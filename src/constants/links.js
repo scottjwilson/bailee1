@@ -12,8 +12,12 @@ export default [
     text: 'blog',
   },
   {
-    path: '/faq',
+    path: '/blog/faq',
     text: 'faq',
+  },
+  {
+    path: 'team',
+    text: 'meet the team',
   },
   {
     path: '/contact',

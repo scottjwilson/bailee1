@@ -20,6 +20,11 @@
   width: 300px;
   margin: 0 auto;
 }
+
+.btnwrapper {
+  margin: 6rem 0 0 0;
+}
+
 .btnprimary {
   text-transform: uppercase;
   text-decoration: none;

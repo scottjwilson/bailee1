@@ -3,7 +3,7 @@
   flex-direction: column;
   margin-top: auto;
   flex-shrink: 0;
-  padding: 3rem 0;
+  padding: 1rem 0;
   background: #242223;
 }
 
@@ -13,6 +13,7 @@
   justify-content: space-between;
   margin: 0 auto;
   color: white;
+  padding-top: 1rem;
 }
 
 .icon {
@@ -43,11 +44,13 @@
 
 .links {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fffdff;
-  margin: 3rem 1rem;
+
+  margin: 2rem auto;
   letter-spacing: 4px;
 
   font-weight: bold;
@@ -56,8 +59,12 @@
 .link {
   margin: 0 1rem;
   transition: all 0.4s;
+  color: #fffdff;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .link:hover {
   transform: translateY(-0.2rem);
+  color: #cb322b;
 }
