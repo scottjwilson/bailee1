@@ -5,6 +5,7 @@ import Link, { graphql } from 'gatsby'
 import ContactForm from '../components/Contact/contactform'
 import styled from 'styled-components'
 
+
 import SEO from '../components/SEO'
 
 const privacy = () => {
@@ -20,18 +21,18 @@ const privacy = () => {
         Privacy Policy of The Bailee App, inc. Effective date: July 02, 2018
         <SectionsList>
         
-         <Item><a href="privacy#type1">Types of Data collected </a></Item>
-         <Item><a href="privacy#information">Information Collection and Use</a></Item>
-         <Item><a href="privacy#type2">Types of Data Collected</a></Item>
-         <Item><a href="privacy#use">Use of Data</a></Item>
-         <Item><a href="privacy#transfer">Transfer Of Data</a></Item>
-         <Item><a href="privacy#disclosure">Disclosure Of Data</a></Item>
-         <Item><a href="privacy#security">Security Of Data</a></Item>
-         <Item><a href="privacy#service-provider">Service Providers</a></Item>
-         <Item><a href="privacy#analytics">Analytics</a></Item>
-         <Item><a href="privacy#link-other-site">Links To Other Sites</a></Item>
-         <Item><a href="privacy#children-privacy">Children's Privacy</a></Item>
-         <Item><a href="privacy#change-privacy">Changes To This Privacy Policy</a></Item>
+         <Item><a href="#type1">Types of Data collected </a></Item>
+         <Item><a href="#information">Information Collection and Use</a></Item>
+         <Item><a href="#type2">Types of Data Collected</a></Item>
+         <Item><a href="#use">Use of Data</a></Item>
+         <Item><a href="#transfer">Transfer Of Data</a></Item>
+         <Item><a href="#disclosure">Disclosure Of Data</a></Item>
+         <Item><a href="#security">Security Of Data</a></Item>
+         <Item><a href="#service-provider">Service Providers</a></Item>
+         <Item><a href="#analytics">Analytics</a></Item>
+         <Item><a href="#link-other-site">Links To Other Sites</a></Item>
+         <Item><a href="#children-privacy">Children's Privacy</a></Item>
+         <Item><a href="#change-privacy">Changes To This Privacy Policy</a></Item>
          <Item><a href="privacy#contact-us">Contact Us</a></Item>
                                     
         </SectionsList>
