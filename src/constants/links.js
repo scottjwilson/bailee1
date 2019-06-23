@@ -23,4 +23,12 @@ export default [
     path: '/contact',
     text: 'contact',
   },
+  {
+    path: '/terms',
+    text: 'Terms',
+  },
+  {
+    path: '/privacy',
+    text: 'privacy',
+  },
 ]
