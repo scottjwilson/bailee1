@@ -45,15 +45,18 @@
 .links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-
   margin: 2rem auto;
   letter-spacing: 4px;
-
   font-weight: bold;
+}
+
+@media screen and (min-width: 978px) {
+  .links {
+    flex-direction: row;
+  }
 }
 
 .link {
