@@ -59,6 +59,13 @@ module.exports = {
       options: contentfulConfig,
     },
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://thebaileeapp.us18.list-manage.com/subscribe/post?u=6f7ee1c367a5b27d8391cb2c5&amp;id=d6bb89b754',
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-116132710-1',
