@@ -10,10 +10,10 @@ const BannerButton = styled.button`
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
-
+  transition: 2s;
   font-weight: 700;
   ${mainstyles.border({ color: `${mainstyles.colors.mainWhite}` })};
-  ${mainstyles.transition({})};
+
   &:hover {
     transform: translateY(-5px);
     cursor: pointer;
