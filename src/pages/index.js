@@ -18,8 +18,7 @@ import FeaturedBusiness from '../components/HomePageComponents/FeaturedBusiness'
 
 import AppFeatures from '../components/HomePageComponents/AppFeatures'
 
-import {
-  mainstyles,
+import {,
   HomeHeader,
   Banner,
   BannerButton,
