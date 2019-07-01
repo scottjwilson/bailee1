@@ -9,7 +9,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const GET_MEMBERS = graphql`
   query {
-    members: allContentfulMember(sort: { fields: createdAt, order: ASC }) {
+    members: allContentfulMember(sort: { fields: createdAt, order: DESC }) {
       edges {
         node {
           name
