@@ -18,12 +18,7 @@ import FeaturedBusiness from '../components/HomePageComponents/FeaturedBusiness'
 
 import AppFeatures from '../components/HomePageComponents/AppFeatures'
 
-import {,
-  HomeHeader,
-  Banner,
-  BannerButton,
-  BusinessCard,
-} from '../utils'
+import { HomeHeader, Banner, BannerButton, BusinessCard } from '../utils'
 
 class RootIndex extends React.Component {
   render() {

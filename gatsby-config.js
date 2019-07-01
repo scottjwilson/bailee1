@@ -28,7 +28,7 @@ module.exports = {
     author: '@swolecoder',
     twitterUsername: '@thebaileeapp',
     image: '/defaultBcg.jpeg',
-    siteUrl: 'https://thebaileeapp.com',
+    siteUrl: 'https://baileeapp.com',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
@@ -49,8 +49,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://thebaileeapp.com',
-        sitemap: 'https://thebaileeapp.com/sitemap.xml',
+        host: 'https://baileeapp.com',
+        sitemap: 'https://baileeapp.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
