@@ -169,8 +169,8 @@ const Group = styled.div`
 const Input = styled.input`
   ${tw`mx-auto`};
 
-  font-size: 1.2rem;
-  font-family: 'Dosis';
+  font-size: 0.8rem;
+  font-family: 'Roboto';
   padding: 1rem 1rem;
   border-radius: 2px;
   background-color: #f7fafc;

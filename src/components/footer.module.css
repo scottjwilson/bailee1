@@ -50,7 +50,6 @@
   text-transform: uppercase;
   margin: 2rem auto;
   letter-spacing: 4px;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 978px) {
@@ -60,6 +59,7 @@
 }
 
 .link {
+  font-family: 'Roboto';
   margin: 0 1rem;
   transition: all 0.4s;
   color: #fffdff;

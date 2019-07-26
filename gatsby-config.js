@@ -83,7 +83,13 @@ module.exports = {
         fonts: [
           {
             family: `Dosis`,
+            variants: [`300`, `400`, `500`, `600`],
             subsets: [`latin`],
+          },
+
+          {
+            family: 'Roboto',
+            variants: [`300`, `400`, `500`, `600`],
           },
           {
             family: `Open Sans`,

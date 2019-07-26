@@ -84,6 +84,7 @@
 
 .navigation__link:link,
 .navigation__link:visited {
+  font-family: 'Roboto';
   display: inline-block;
   font-size: 2rem;
   font-weight: 300;
