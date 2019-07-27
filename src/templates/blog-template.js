@@ -7,19 +7,26 @@ import blogstyle from './blog-template.module.css'
 import SEO from '../components/SEO'
 import { DiscussionEmbed } from 'disqus-react'
 
+import { FacebookShareCount } from 'react-share'
+
 const Blog = ({ data, pageContext }) => {
   const {
     title,
+    slug,
     publishDate,
     richbody: { json },
   } = data.post
 
-  const baseUrl = 'https://bailee.netlify.com'
+  const baseUrl = 'https://baileeapp.com'
 
   const disqusShortname = 'bailee-1'
   const disqusConfig = {
     identifier: pageContext.slug,
     title: title,
+    url: baseUrl + pageContext.slug,
+  }
+
+  const shareCount = {
     url: baseUrl + pageContext.slug,
   }
 
@@ -42,6 +49,7 @@ const Blog = ({ data, pageContext }) => {
         <div className={blogstyle.center}>
           <h1>{title}</h1>
           <h4>Published at : {publishDate}</h4>
+          <FacebookShareCount url={shareCount.url} />
           <article className={blogstyle.post}>
             {documentToReactComponents(json, options)}
           </article>
