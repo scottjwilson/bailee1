@@ -2,8 +2,14 @@
   display: flex;
   flex-direction: column;
 
-  margin: 2rem 0 0 2rem;
+  margin: 2rem 0 0 1rem;
   position: fixed;
+}
+
+@media only screen and (min-width: 600px) {
+  .socialbar {
+    margin: 2rem 0 0 2rem;
+  }
 }
 .social {
   padding-bottom: 2rem;
