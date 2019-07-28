@@ -30,7 +30,7 @@ const Blog = ({ data, pageContext }) => {
     richbody: { json },
   } = data.post
 
-  const baseUrl = 'https://baileeapp.com'
+  const baseUrl = 'https://baileeapp.com/'
 
   const disqusShortname = 'bailee-1'
   const disqusConfig = {
