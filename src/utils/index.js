@@ -4,7 +4,8 @@ import Banner from './Banner'
 import { Section } from './Section'
 import { Title } from './Title'
 import { BannerButton, SectionButton } from './Button'
-import BusinessCard from './BusinessCard'
+
+import elevation from './elevation'
 export {
   mainstyles,
   HomeHeader,
@@ -14,5 +15,5 @@ export {
   SectionButton,
   Section,
   Title,
-  BusinessCard,
+  elevation,
 }

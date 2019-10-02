@@ -1,9 +1,12 @@
 .template {
   padding: 4rem 0;
+  margin: 1rem 1rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 .center {
-  width: 80vw;
-  margin: 0 auto;
+  margin: 0;
 }
 .images {
   display: grid;
@@ -46,6 +49,12 @@
 }
 .desc {
   line-height: 2;
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+  color: white;
 }
 .template h4 {
   text-transform: capitalize;
@@ -69,6 +78,11 @@
   margin-top: 4rem;
   display: flex;
   justify-content: center;
+}
+.linkwrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
 .btnprimary {

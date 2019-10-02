@@ -6,9 +6,10 @@ import { FaMap } from 'react-icons/fa'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import businesstemplate from './businesstemplate.module.css'
 import SEO from '../components/SEO'
+import { BannerButton } from '../utils/'
 
 const Template = ({ data }) => {
-  const { name, description, location, category, images } = data.biz
+  const { name, description, link, location, category, images } = data.biz
   const [mainImage, ...allImages] = images
 
   return (
@@ -19,6 +20,7 @@ const Template = ({ data }) => {
         <div className={businesstemplate.center}>
           <h1>{name}</h1>
           <div className={businesstemplate.info}>
+            <p>{category}</p>
             <p>
               <FaMap className={businesstemplate.icon} />
               {location}
@@ -26,6 +28,13 @@ const Template = ({ data }) => {
           </div>
 
           <p className={businesstemplate.desc}>{description}</p>
+
+          <div className={businesstemplate.linkwrapper}>
+            <div className={businesstemplate.btnprimary}>
+              <a href={link}>Visit Business</a>
+            </div>
+          </div>
+
           <div className={businesstemplate.images}>
             {allImages.map((item, index) => {
               return (
@@ -58,6 +67,7 @@ export const query = graphql`
     biz: contentfulBusiness(slug: { eq: $slug }) {
       name
       description
+      link
       location
       category
       images {
