@@ -217,7 +217,6 @@ const ButtonWrapper = styled.div`
 
   .btnprimary:hover {
     transform: translateY(-5px);
-    font-weight: 800;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     background-color: #cb322b;
     color: #fff;

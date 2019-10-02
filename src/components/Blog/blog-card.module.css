@@ -19,6 +19,7 @@
 .img {
   transition: all 0.3s linear;
   border-radius: 0.25rem;
+  max-height: 250px;
 }
 .img-container:hover .img {
   opacity: 0.3;

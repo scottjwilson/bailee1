@@ -5,7 +5,7 @@ import { FaMap } from 'react-icons/fa'
 
 import bizstyle from './bizstyle.module.css'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const getImage = graphql`
@@ -29,7 +29,7 @@ const Business = ({ business }) => {
 
   return (
     <article className={bizstyle.bizcard}>
-      <AniLink fade to={`/businesses/${slug}`} className={bizstyle.biglink}>
+      <Link to={`/businesses/${slug}`} className={bizstyle.biglink}>
         <div className={bizstyle.imagecontainer}>
           <Image
             fluid={mainImage}
@@ -50,7 +50,7 @@ const Business = ({ business }) => {
             </div>
           </div>
         </div>
-      </AniLink>
+      </Link>
     </article>
   )
 }
