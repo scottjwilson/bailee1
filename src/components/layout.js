@@ -2,7 +2,7 @@ import React from 'react'
 
 import Navbar from './Navbar/Navbar'
 import Sidebar from './Navbar/Sidebar'
-import styled from 'styled-components'
+
 import GlobalStyle from '../styles/global'
 import Footer from './footer'
 
