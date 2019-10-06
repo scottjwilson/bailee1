@@ -1,10 +1,11 @@
 import React from 'react'
-import { AppContext } from '../../context/'
+import { AppContext } from '../../context'
 import styles from './sidebar.module.css'
 import { FaTimes } from 'react-icons/fa'
 import links from '../../constants/Links'
 import { Link } from 'gatsby'
 const Sidebar = () => {
+  const []
   const { isSidebarOpen, handleCloseSidebar, height } = React.useContext(
     AppContext
   )
