@@ -1,62 +1,24 @@
 import React from 'react'
-import './navbar.css'
-import styled from 'styled-components'
 import { Link } from 'gatsby'
-import Image from './Image'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-export default function Navbar() {
+import styles from './navbar.module.css'
+import links from '../../constants/Links'
+import icons from '../../constants/SocialLinks'
+import { FaAlignRight } from 'react-icons/fa'
+import { AppContext } from '../../context'
+const Navbar = () => {
+  const { handleOpenSidebar, height } = React.useContext(AppContext)
   return (
-    <Navigation>
-      <input
-        type="checkbox"
-        className="navigation__checkbox"
-        id="navi-toggle"
-      />
-      <label for="navi-toggle" className="navigation__button">
-        <Image className="baileeappbutton" />
-      </label>
-      <div className="navigation__background" />
-      <nav className="navigation__nav">
-        <ul className="navigation__list">
-          <li className="navigation__item">
-            <AniLink fade to="/" className="navigation__link">
-              Home
-            </AniLink>
-          </li>
-          <li className="navigation__item">
-            <AniLink fade to="/businesses" className="navigation__link">
-              Businesses
-            </AniLink>
-          </li>
-          <li className="navigation__item">
-            <AniLink fade to="/blogs" className="navigation__link">
-              BLog
-            </AniLink>
-          </li>
-
-          <li className="navigation__item">
-            <AniLink fade to="/blog/faq" className="navigation__link">
-              FAQ
-            </AniLink>
-          </li>
-          <li className="navigation__item">
-            <AniLink fade to="/team" className="navigation__link">
-              Meet The Team
-            </AniLink>
-          </li>
-          <li className="navigation__item">
-            <AniLink fade to="/contact" className="navigation__link">
-              Contact
-            </AniLink>
-          </li>
-        </ul>
-      </nav>
-    </Navigation>
+    <nav>
+      <button
+        type="button"
+        className={styles.toggleBtn}
+        onClick={handleOpenSidebar}
+      >
+        menu<FaAlignRight className={styles.toggleIcon}></FaAlignRight>
+      </button>
+    </nav>
   )
 }
 
-const Navigation = styled.div`
-  /* font-family: 'Open Sans', sans-serif; */
-  font-family: 'Dosis', sans-serif;
-`
+export default Navbar

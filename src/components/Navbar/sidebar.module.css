@@ -1,0 +1,74 @@
+.sidebar {
+  transition: all 0.1s linear;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 3;
+  opacity: 1;
+}
+.closeSidebar {
+  opacity: 0;
+  display: none;
+  z-index: 0;
+}
+.header {
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.movingHeader {
+  padding: 1rem 2rem;
+}
+
+.closeBtn {
+  border: none;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  color: white;
+  outline-color: #cb322b;
+  background: transparent;
+}
+.closeIcon {
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+}
+.closeBtn:hover {
+  color: var(--primaryColor);
+}
+.linksContainer {
+  margin-top: -4.875rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+  text-transform: capitalize;
+  padding: 0.2rem 3rem;
+  margin: 0.5rem 0;
+  text-align: center;
+
+  transition: all 0.1s linear;
+
+  font-family: 'Roboto';
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.link:hover {
+  transform: translateY(-0.2rem);
+  color: #cb322b;
+}

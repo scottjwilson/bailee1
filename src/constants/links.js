@@ -1,34 +1,32 @@
 export default [
   {
-    path: '/',
+    id: Math.random(),
     text: 'home',
+    url: '/',
   },
   {
-    path: '/businesses',
+    id: Math.random(),
     text: 'businesses',
+    url: '/businesses',
   },
   {
-    path: '/blogs',
-    text: 'blog',
+    id: Math.random(),
+    text: 'blogs',
+    url: '/blog',
   },
   {
-    path: '/blog/faq',
+    id: Math.random(),
     text: 'faq',
+    url: '/blog/faq',
   },
   {
-    path: 'team',
+    id: Math.random(),
     text: 'meet the team',
+    url: '/team',
   },
   {
-    path: '/contact',
+    id: Math.random(),
     text: 'contact',
-  },
-  {
-    path: '/terms',
-    text: 'Terms',
-  },
-  {
-    path: '/privacy',
-    text: 'privacy',
+    url: '/contact',
   },
 ]

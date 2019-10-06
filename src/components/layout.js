@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Navbar from './Navbar/Navbar'
+import Sidebar from './Navbar/Sidebar'
 import styled from 'styled-components'
 import GlobalStyle from '../styles/global'
 import Footer from './footer'
 
-class Template extends React.Component {
+export default class Template extends React.Component {
   render() {
     const { location, children } = this.props
     let header
@@ -17,17 +17,23 @@ class Template extends React.Component {
     }
 
     return (
-      <Container>
+      <>
         <GlobalStyle />
-        <Navbar />
-
+        <Navbar></Navbar>
+        <Sidebar></Sidebar>
         {children}
         <Footer />
-      </Container>
+      </>
     )
   }
 }
 
-const Container = styled.div``
-
-export default Template
+export const query = graphql`
+  query HeadingQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

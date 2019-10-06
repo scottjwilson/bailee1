@@ -10,6 +10,14 @@ module.exports = {
     twitterUsername: '@thebaileeapp',
     image: '/defaultBcg.jpeg',
     siteUrl: 'https://baileeapp.com',
+    pages: {
+      home: '/',
+      about: '/about',
+      businesses: '/businesses',
+      faq: '/blog/faq',
+      blog: '/blogs',
+      team: '/team',
+    },
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
