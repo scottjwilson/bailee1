@@ -1,9 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
 import styles from './navbar.module.css'
-import links from '../../constants/Links'
-import icons from '../../constants/SocialLinks'
+
 import { FaAlignRight } from 'react-icons/fa'
 import { AppContext } from '../../context'
 const Navbar = () => {
