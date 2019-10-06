@@ -4,9 +4,8 @@ import Image from 'gatsby-image'
 import { FaMap } from 'react-icons/fa'
 
 import bizstyle from './bizstyle.module.css'
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const getImage = graphql`
   query {
@@ -55,13 +54,13 @@ const Business = ({ business }) => {
   )
 }
 
-Business.PropTypes = {
-  business: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    images: PropTypes.arrayOf(PropTypes.object).isRequired,
+Business.propTypes = {
+  business: propTypes.shape({
+    name: propTypes.string.isRequired,
+    description: propTypes.string.isRequired,
+    category: propTypes.string.isRequired,
+    location: propTypes.string.isRequired,
+    images: propTypes.arrayOf(propTypes.object).isRequired,
   }),
 }
 
