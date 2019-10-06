@@ -5,7 +5,6 @@ import { FaTimes } from 'react-icons/fa'
 import links from '../../constants/Links'
 import { Link } from 'gatsby'
 const Sidebar = () => {
-  const []
   const { isSidebarOpen, handleCloseSidebar, height } = React.useContext(
     AppContext
   )

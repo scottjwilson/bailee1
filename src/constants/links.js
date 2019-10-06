@@ -12,7 +12,7 @@ export default [
   {
     id: Math.random(),
     text: 'blogs',
-    url: '/blog',
+    url: '/blogs',
   },
   {
     id: Math.random(),
