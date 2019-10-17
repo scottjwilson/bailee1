@@ -1,13 +1,12 @@
 import React from 'react'
-import { AppContext } from '../../context'
-import styles from './sidebar.module.css'
+import { AppContext } from '../context/context'
+import styles from '../css/sidebar.module.css'
 import { FaTimes } from 'react-icons/fa'
-import links from '../../constants/links'
+import links from '../constants/Links'
 import { Link } from 'gatsby'
+
 const Sidebar = () => {
-  const { isSidebarOpen, handleCloseSidebar, height } = React.useContext(
-    AppContext
-  )
+  const { isSidebarOpen, handleCloseSidebar } = React.useContext(AppContext)
   return (
     <div
       className={
@@ -16,7 +15,13 @@ const Sidebar = () => {
           : `${styles.sidebar} ${styles.closeSidebar} `
       }
     >
-      <header className={styles.header}>
+      <header
+        className={
+          height < 80
+            ? `${styles.header}`
+            : `${styles.header} ${styles.movingHeader}`
+        }
+      >
         <button onClick={handleCloseSidebar} className={styles.closeBtn}>
           close <FaTimes className={styles.closeIcon}></FaTimes>
         </button>

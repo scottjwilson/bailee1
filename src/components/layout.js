@@ -1,6 +1,7 @@
 import React from 'react'
 
 import GlobalStyle from '../styles/global'
+import Navbar from '../components/Navbar/Navbar'
 import Footer from './footer'
 
 export default class Template extends React.Component {
@@ -16,7 +17,7 @@ export default class Template extends React.Component {
     return (
       <>
         <GlobalStyle />
-
+        <Navbar />
         {children}
         <Footer />
       </>
