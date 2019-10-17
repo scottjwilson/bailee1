@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
-import img from 'gatsby-image'
-import { mainstyles } from '../utils'
+
 import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
-import links from '../constants/links'
+import routes from '../constants/routes'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import styles from '../components/footer.module.css'
 
@@ -32,7 +30,7 @@ export default class Footer extends Component {
     return (
       <footer className={styles.footer}>
         <div className={styles.links}>
-          {links.map((item, index) => {
+          {routes.map((item, index) => {
             return (
               <AniLink fade key={index} to={item.path} className={styles.link}>
                 {item.text}

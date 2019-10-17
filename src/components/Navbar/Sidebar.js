@@ -2,7 +2,7 @@ import React from 'react'
 import { AppContext } from '../../context/'
 import styles from './sidebar.module.css'
 import { FaTimes } from 'react-icons/fa'
-import links from '../../constants/Links'
+import routes from '../../constants/routes'
 import { Link } from 'gatsby'
 
 const Sidebar = () => {
@@ -22,7 +22,7 @@ const Sidebar = () => {
       </header>
       <section className={styles.linksContainer}>
         <div className={styles.links}>
-          {links.map(item => {
+          {routes.map(item => {
             return (
               <Link
                 key={item.id}
