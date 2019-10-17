@@ -1,13 +1,11 @@
 .sidebar {
-  transition: all 0.1s linear;
-
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: 3;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2;
   opacity: 1;
 }
 .closeSidebar {
@@ -26,15 +24,18 @@
 
 .closeBtn {
   border: none;
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 1.1rem;
   display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
   align-items: center;
-
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  transition: all 0.3s linear;
   cursor: pointer;
-  color: white;
-  outline-color: #cb322b;
+  color: var(--mainWhite);
+  outline-color: var(--primaryColor);
   background: transparent;
 }
 .closeIcon {

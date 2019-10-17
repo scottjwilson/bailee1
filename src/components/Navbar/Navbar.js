@@ -1,30 +1,22 @@
-import React, { Component } from 'react'
-import styles from '.navbar.module.css'
+import React from 'react'
+import styles from './navbar.module.css'
 import Image from './Image'
+import { AppContext } from '../../context'
 
-export default class Navbar extends Component {
-  state = {
-    toggle: true,
-  }
-
-  toggle = () => {
-    this.setState({
-      toggle: !this.state.toggle,
-    })
-  }
-
-  render() {
-    return (
-      <nav>
-        <button
-          type="button"
-          className={styles.toggleBtn}
-          onClick={this.toggle}
-        >
-          menu
-          <Image />
-        </button>
-      </nav>
-    )
-  }
+const Navbar = () => {
+  const { handleOpenSidebar } = React.useContext(AppContext)
+  return (
+    <nav>
+      <button
+        type="button"
+        className={styles.toggleBtn}
+        onClick={handleOpenSidebar}
+      >
+        menu
+        <Image />
+      </button>
+    </nav>
+  )
 }
+
+export default Navbar

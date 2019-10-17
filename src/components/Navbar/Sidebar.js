@@ -1,8 +1,8 @@
 import React from 'react'
-import { AppContext } from '../context/context'
-import styles from '../css/sidebar.module.css'
+import { AppContext } from '../../context/'
+import styles from './sidebar.module.css'
 import { FaTimes } from 'react-icons/fa'
-import links from '../constants/Links'
+import links from '../../constants/Links'
 import { Link } from 'gatsby'
 
 const Sidebar = () => {
@@ -15,13 +15,7 @@ const Sidebar = () => {
           : `${styles.sidebar} ${styles.closeSidebar} `
       }
     >
-      <header
-        className={
-          height < 80
-            ? `${styles.header}`
-            : `${styles.header} ${styles.movingHeader}`
-        }
-      >
+      <header className={styles.header}>
         <button onClick={handleCloseSidebar} className={styles.closeBtn}>
           close <FaTimes className={styles.closeIcon}></FaTimes>
         </button>
