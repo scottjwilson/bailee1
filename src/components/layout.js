@@ -18,8 +18,7 @@ export default class Template extends React.Component {
     return (
       <>
         <GlobalStyle />
-        <Navbar />
-        <Sidebar />
+
         {children}
         <Footer />
       </>
