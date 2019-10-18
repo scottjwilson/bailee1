@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import { FaAlignRight } from 'react-icons/fa'
 import styled from 'styled-components'
-import logo from '../../images/favicon.jpg'
+
+import Brand from './Brand'
 import { mainstyles } from '../../utils'
 
 export default class NavbarHeader extends Component {
@@ -11,7 +12,7 @@ export default class NavbarHeader extends Component {
     return (
       <HeaderWrapper>
         <Link to="/">
-          <img src={logo} alt="bailee app" className="brand" />
+          <Brand />
         </Link>
 
         <FaAlignRight
@@ -26,9 +27,6 @@ export default class NavbarHeader extends Component {
 }
 
 const HeaderWrapper = styled.div`
-  .brand {
-    border-radius: 50%;
-  }
   padding: 0.4rem 1rem;
   display: flex;
   align-items: center;

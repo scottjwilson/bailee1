@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { mainstyles, elevation } from '../../utils'
 export default class NavbarLinks extends Component {

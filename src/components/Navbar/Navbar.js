@@ -25,7 +25,6 @@ export default class Navbar extends Component {
 
 const NavWrapper = styled.nav`
   background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.7);
 
   @media (min-width: 768px) {
     display: flex;
