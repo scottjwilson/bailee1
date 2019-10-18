@@ -18,6 +18,7 @@ function BlogHeader({ img, children }) {
 
 const IndexHeader = styled.header`
   min-height: 100vh;
+
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.9)),
     url(${props => props.img}) center/cover;
   display: flex;

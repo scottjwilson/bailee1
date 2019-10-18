@@ -1,11 +1,13 @@
 export const colors = {
   mainWhite: `#fffdff`,
   mainBlack: `#242223`,
-  mainRed: `#000`,
+  mainRed: `#cb322b`,
   mainRed2: `#481e20`,
   mainGrey: '#999',
   mainGrey2: `#5b4348`,
   mainGrey3: '#dcdfe2',
+  mainYellow: `#d2aa5c`,
+  mainYellow2: `#F2AF29`,
 }
 
 export const gradients = {
@@ -27,4 +29,20 @@ export const border = ({
 
 export const letterSpacing = ({ spacing = '0.1rem' }) => {
   return `letter-spacing:${spacing}`
+}
+
+export const transDefault = 'transition:all 0.2s ease-in-out'
+export const transFunction = (
+  property = 'all',
+  time = '0.5s',
+  type = 'linear'
+) => {
+  return `transition:${property} ${time} ${type}`
+}
+export const transObject = ({
+  property = 'all',
+  time = '0.5s',
+  type = 'ease-in-out',
+}) => {
+  return `transition: ${property} ${time} ${type}`
 }

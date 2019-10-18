@@ -6,8 +6,6 @@
   justify-content: center;
   width: auto;
   background: linear-gradient(to right bottom, #481e20 0%, #cb322b 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
 }
 .row {
   display: flex;
