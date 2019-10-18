@@ -61,6 +61,7 @@ const LinkWrapper = styled.ul`
   flex-direction: column;
   align-items: center;
   margin: 0;
+  padding: 0;
   @media (min-width: 768px) {
     flex-direction: row;
     box-shadow: none;

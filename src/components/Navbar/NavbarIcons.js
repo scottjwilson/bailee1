@@ -6,19 +6,19 @@ export default class NavbarIcons extends Component {
   state = {
     icons: [
       {
+        id: 3,
+        icon: <FaInstagram className="icon instagram-icon" />,
+        path: `https://instagram.com/thebaileeapp`,
+      },
+      {
         id: 1,
         icon: <FaFacebook className="icon facebook-icon" />,
-        path: `https://www.facebook.com`,
+        path: `https://facebook.com/thebaileeapp`,
       },
       {
         id: 2,
         icon: <FaTwitter className="icon twitter-icon" />,
-        path: `https://www.facebook.com`,
-      },
-      {
-        id: 3,
-        icon: <FaInstagram className="icon instagram-icon" />,
-        path: `https://www.facebook.com`,
+        path: `https://twitter.com/thebaileeapp`,
       },
     ],
   }
@@ -44,19 +44,12 @@ const IconWrapper = styled.div`
   .icon {
     // margin-right: 2rem;
     font-size: 1.3rem;
+    color: #fff;
+
     cursor: pointer;
     ${mainstyles.transFunction()};
   }
 
-  .facebook-icon {
-    color: #3b579d;
-  }
-  .twitter-icon {
-    color: #3ab7f0;
-  }
-  .instagram-icon {
-    color: #da5f53;
-  }
   .icon:hover {
     color: ${mainstyles.colors.mainRed};
   }

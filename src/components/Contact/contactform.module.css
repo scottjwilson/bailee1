@@ -1,7 +1,6 @@
 .container {
-  height: 900px;
   display: flex;
-  align-items: center;
+
   align-content: center;
   justify-content: center;
   width: auto;
@@ -9,14 +8,14 @@
 }
 .row {
   display: flex;
-  align-items: center;
+
   align-content: space-between;
   justify-content: center;
   width: 100%;
 }
 
 .form {
-  margin: 10rem auto;
+  margin: 3rem auto;
   width: 90%;
   background-color: #edf2f7;
   border-radius: 3px;
